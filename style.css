@@ -5040,3 +5040,581 @@ body.project-modal-open {
     top: 44% !important;
   }
 }
+
+/* =========================================================
+   Responsive stability and performance — phones and tablets
+   ========================================================= */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+html {
+  scroll-padding-top: 92px;
+}
+
+body,
+main,
+header,
+footer,
+section,
+.container,
+.hero-grid,
+.hero-copy,
+.hero-visual,
+.projects-grid,
+.certifications-grid,
+.project-card,
+.certificate-card,
+.project-content,
+.certificate-content {
+  min-width: 0;
+}
+
+main,
+section,
+.container {
+  max-width: 100%;
+}
+
+section {
+  overflow-x: clip;
+}
+
+img,
+svg {
+  height: auto;
+}
+
+.project-visual,
+.certificate-preview,
+.portrait-frame {
+  contain: layout paint;
+}
+
+/* Keep the two-column hero inside the viewport on smaller laptops. */
+@media (max-width: 1200px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+    gap: 38px;
+  }
+
+  .hero-visual {
+    min-width: 0;
+    overflow: clip;
+  }
+
+  .portrait-shell {
+    width: min(400px, 100%);
+    max-width: 100%;
+  }
+
+  .card-top {
+    right: 0;
+  }
+
+  .card-bottom {
+    left: 0;
+  }
+
+  .orbit-two {
+    right: 1%;
+  }
+}
+
+/* Tablet navigation and single-column hero. */
+@media (max-width: 980px) {
+  .section {
+    padding: 82px 0;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-button[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-button[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-button[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: calc(78px + env(safe-area-inset-top, 0px));
+    right: 16px;
+    left: 16px;
+    display: flex;
+    max-height: calc(100dvh - 98px - env(safe-area-inset-top, 0px));
+    padding: 18px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(13, 8, 22, 0.98);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.48);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  .nav-links a {
+    padding: 11px 10px;
+    font-size: 0.94rem;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-cta {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 132px;
+  }
+
+  .hero-grid,
+  .two-column,
+  .contact-grid,
+  .split-heading {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-grid {
+    gap: 54px;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-inline: auto;
+  }
+
+  .hero-actions,
+  .social-row {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+    padding-inline: clamp(8px, 4vw, 26px);
+    overflow: clip;
+  }
+
+  .portrait-shell {
+    width: min(420px, 100%);
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .split-heading {
+    gap: 10px;
+  }
+
+  .split-heading p:last-child {
+    justify-self: start;
+  }
+}
+
+/* Use two comfortable project columns on iPads and compact laptops. */
+@media (max-width: 1280px) {
+  #projects .container {
+    width: min(calc(100% - 40px), var(--container));
+  }
+
+  #projects .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  #projects .project-card > .project-visual {
+    flex-basis: 195px;
+    height: 195px !important;
+    min-height: 195px !important;
+    max-height: 195px !important;
+  }
+
+  #projects .project-content {
+    padding: 21px;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .container,
+  #projects .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .section {
+    padding: 68px 0;
+  }
+
+  h1 {
+    font-size: clamp(2.65rem, 15vw, 4.15rem);
+    letter-spacing: -0.055em;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  button,
+  .project-type,
+  .certificate-meta {
+    overflow-wrap: anywhere;
+  }
+
+  .hero {
+    padding-top: 116px;
+  }
+
+  .hero-grid {
+    gap: 38px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 150px;
+  }
+
+  .terminal-line {
+    max-width: 100%;
+    font-size: 0.64rem;
+  }
+
+  .terminal-prompt {
+    display: none;
+  }
+
+  .hero-visual {
+    padding-inline: 4px;
+  }
+
+  .portrait-shell {
+    width: min(360px, 100%);
+  }
+
+  .floating-card {
+    min-width: 0;
+    width: min(148px, 43%);
+    padding: 9px;
+    gap: 7px;
+  }
+
+  .floating-card .card-icon {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    font-size: 0.68rem;
+  }
+
+  .floating-card strong {
+    font-size: 0.72rem;
+  }
+
+  .floating-card small {
+    font-size: 0.61rem;
+  }
+
+  .card-top {
+    top: 13%;
+    right: 0;
+  }
+
+  .card-bottom {
+    bottom: 10%;
+    left: 0;
+  }
+
+  #projects .projects-grid,
+  .certifications-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #projects .project-card > .project-visual {
+    flex-basis: 180px;
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+  }
+
+  #projects .project-content {
+    padding: 19px;
+  }
+
+  #projects .project-subtitle,
+  #projects .project-summary,
+  #projects .project-tech-tags {
+    min-height: 0 !important;
+  }
+
+  #projects .project-summary {
+    display: block;
+    overflow: visible;
+  }
+
+  .certification-group-heading {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 10px;
+  }
+
+  .certification-group-heading > div {
+    min-width: 0;
+  }
+
+  .certification-group-heading p {
+    justify-self: start;
+  }
+
+  .certificate-preview {
+    height: 176px;
+  }
+
+  .certificate-content {
+    padding: 18px;
+  }
+
+  .certificate-content h3,
+  .certificate-content > p,
+  .certificate-tags,
+  .certificate-meta {
+    min-height: 0;
+  }
+
+  .contact-card a {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand-copy strong {
+    font-size: 0.86rem;
+  }
+
+  .brand-mark {
+    width: 39px;
+    height: 39px;
+  }
+
+  .menu-button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    margin-bottom: 22px;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .social-row {
+    flex-wrap: wrap;
+  }
+
+  .project-visual-badge,
+  .certificate-level {
+    max-width: calc(100% - 18px) !important;
+    white-space: normal;
+  }
+}
+
+/* Mobile-safe project modals. */
+.project-modal-panel {
+  max-width: 100%;
+  max-height: calc(100dvh - 60px);
+}
+
+@media (max-width: 760px) {
+  .project-modal {
+    padding:
+      max(8px, env(safe-area-inset-top, 0px))
+      max(8px, env(safe-area-inset-right, 0px))
+      max(8px, env(safe-area-inset-bottom, 0px))
+      max(8px, env(safe-area-inset-left, 0px));
+    align-items: end;
+  }
+
+  .project-modal-panel {
+    width: 100%;
+    max-height: calc(100dvh - 16px);
+    border-radius: 18px 18px 0 0;
+  }
+
+  .project-modal-hero {
+    min-height: 260px;
+    border-radius: 17px 17px 0 0;
+  }
+
+  .project-modal-heading {
+    right: 20px;
+    bottom: 24px;
+    left: 20px;
+  }
+
+  .project-modal-heading h2 {
+    font-size: clamp(2rem, 11vw, 3.25rem);
+  }
+
+  .project-modal-body {
+    padding: 26px 18px calc(30px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .project-overview-grid,
+  .project-detail-grid,
+  .project-metrics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-overview-grid section,
+  .project-detail-card,
+  .project-stack-section {
+    padding: 20px;
+  }
+
+  .project-document-links {
+    flex-direction: column;
+  }
+
+  .project-document-links .button {
+    width: 100%;
+  }
+}
+
+/* Reduce continuous GPU work and blur costs on touch devices. */
+@media (max-width: 980px), (pointer: coarse) {
+  .background-effects,
+  .grid,
+  .glow,
+  .cyber-particles,
+  .brand-mark,
+  .brand-mark::after,
+  h1 span,
+  .typing-caret,
+  .portrait-shell::before,
+  .portrait-frame::before,
+  .orbit-one,
+  .orbit-two,
+  .card-top,
+  .card-bottom,
+  .project-visual::before,
+  .timeline-marker {
+    animation: none !important;
+  }
+
+  .cursor-glow {
+    display: none !important;
+  }
+
+  .interactive-card,
+  .interactive-card:hover,
+  .skill-card:hover,
+  .project-card:hover,
+  .portrait-shell,
+  .button,
+  .button:hover {
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  .reveal {
+    filter: none;
+    transform: translateY(12px);
+    transition: opacity 0.42s ease, transform 0.42s ease;
+  }
+
+  .reveal.visible {
+    transform: none;
+  }
+
+  .site-header.scrolled,
+  .nav-links,
+  .floating-card,
+  .project-modal-backdrop,
+  .project-modal-close,
+  .project-visual-badge,
+  .certificate-level {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .glow {
+    filter: blur(70px);
+    opacity: 0.1;
+  }
+
+  .project-card,
+  .certificate-card,
+  .skill-card {
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+  }
+}
+
+@media (hover: none) {
+  .certificate-card:hover,
+  .project-card:hover,
+  .skill-card:hover {
+    transform: none;
+  }
+}
+
+@supports (content-visibility: auto) {
+  main > section:not(.hero) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+}

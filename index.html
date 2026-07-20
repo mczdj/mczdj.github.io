@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Portfolio of Mohamed Ibrahim Idris, a cybersecurity student focused on networking, penetration testing, and AI security.">
   <meta name="theme-color" content="#0b0714">
   <title>Mohamed Ibrahim Idris | Cybersecurity Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/Profile.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260720-certificates">
+  <link rel="stylesheet" href="style.css?v=20260720-mobile-performance">
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
@@ -95,7 +96,7 @@
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
             <div class="portrait-frame">
-              <img src="assets/Profile.png" alt="Mohamed Ibrahim Idris">
+              <img src="assets/Profile.webp" alt="Mohamed Ibrahim Idris" width="900" height="1125" fetchpriority="high" decoding="async">
             </div>
             <div class="floating-card card-top rotating-interest">
   <span class="card-icon" id="top-card-icon">NS</span>
@@ -234,7 +235,7 @@
               <div class="project-logo-rings" aria-hidden="true"></div>
               <div class="project-logo-lockup">
                 <div class="netsentinel-shield-wrapper">
-                  <img src="assets/netsentinel-shield.png" alt="NetSentinel purple shield" class="netsentinel-shield">
+                  <img src="assets/netsentinel-shield.webp" alt="NetSentinel purple shield" class="netsentinel-shield" loading="lazy" decoding="async">
                 </div>
               </div>
               <small class="project-visual-badge netsentinel-badge">DNS Threat Defense</small>
@@ -266,7 +267,7 @@
       src="assets/projects/skillswap-logo.png"
       alt="SkillSwap UAE"
       class="skillswap-card-logo"
-    >
+     loading="lazy" decoding="async">
   </div>
 
   <span class="project-visual-badge skillswap-visual-label">Distributed Systems</span>
@@ -296,7 +297,7 @@
                 src="assets/projects/evil-twin-icon.svg"
                 alt="Raspberry Pi rogue access point between trusted and duplicate wireless networks"
                 class="evil-twin-card-icon"
-              >
+               loading="lazy" decoding="async">
               <small class="project-visual-badge evil-twin-lab-badge">Controlled Lab</small>
             </div>
             <div class="project-content">
@@ -324,7 +325,7 @@
                 src="assets/projects/iot-ids-icon.svg"
                 alt="Raspberry Pi network intrusion detection system"
                 class="iot-ids-card-icon"
-              >
+               loading="lazy" decoding="async">
               <small class="project-visual-badge iot-ids-badge">IoT Security</small>
             </div>
             <div class="project-content">
@@ -352,7 +353,7 @@
                 src="assets/projects/automatic-gate-icon.svg"
                 alt="Automatic sensor-controlled gate system"
                 class="automatic-gate-card-icon"
-              >
+               loading="lazy" decoding="async">
               <small class="project-visual-badge automatic-gate-badge">IoT Automation</small>
             </div>
             <div class="project-content">
@@ -380,7 +381,7 @@
                 src="assets/projects/temperature-system-icon.svg"
                 alt="Temperature monitoring, warning, and ventilation system"
                 class="temperature-system-card-icon"
-              >
+               loading="lazy" decoding="async">
               <small class="project-visual-badge temperature-system-badge">IoT Monitoring</small>
             </div>
             <div class="project-content">
@@ -589,6 +590,9 @@
             </article>
           </div>
         </div>
+
+        <p class="certification-note reveal">Only cybersecurity-relevant credentials are highlighted to keep this portfolio focused. Cisco items shown here are Networking Academy course-completion credentials.</p>
+      </div>
     </section>
 
     <section class="section" id="experience">
@@ -644,12 +648,12 @@
       <button class="project-modal-close" type="button" data-close-project aria-label="Close NetSentinel project details">×</button>
 
       <div class="project-modal-hero">
-        <img src="assets/projects/netsentinel-ai-dashboard.jpg" alt="NetSentinel AI Command Center and threat analytics interface">
+        <img src="assets/projects/netsentinel-ai-dashboard.jpg" alt="NetSentinel AI Command Center and threat analytics interface" loading="lazy" decoding="async">
         <div class="project-modal-hero-overlay"></div>
         <div class="project-modal-heading">
           <p class="project-type">Abu Dhabi University · Capstone Project · December 2025</p>
           <div class="project-modal-title-row">
-            <img src="assets/netsentinel-shield.png" alt="NetSentinel purple shield" class="project-modal-logo">
+            <img src="assets/netsentinel-shield.webp" alt="NetSentinel purple shield" class="project-modal-logo" loading="lazy" decoding="async">
             <h2 id="netsentinel-modal-title">NetSentinel</h2>
           </div>
           <p>Automated Phishing Detection and DNS Security System</p>
@@ -728,12 +732,12 @@
       <button class="project-modal-close" type="button" data-close-project aria-label="Close SkillSwap UAE project details">×</button>
 
       <div class="project-modal-hero skillswap-modal-hero">
-        <img src="assets/projects/skillswap-dashboard.jpg" alt="SkillSwap UAE dashboard showing available skills and navigation options">
+        <img src="assets/projects/skillswap-dashboard.jpg" alt="SkillSwap UAE dashboard showing available skills and navigation options" loading="lazy" decoding="async">
         <div class="project-modal-hero-overlay"></div>
         <div class="project-modal-heading">
           <p class="project-type">Abu Dhabi University · CSC408 Distributed Information Systems · Spring 2025</p>
           <div class="project-modal-title-row skillswap-modal-title-row">
-            <img src="assets/projects/skillswap-logo.png" alt="SkillSwap UAE logo" class="skillswap-modal-logo">
+            <img src="assets/projects/skillswap-logo.png" alt="SkillSwap UAE logo" class="skillswap-modal-logo" loading="lazy" decoding="async">
             <h2 id="skillswap-modal-title">SkillSwap UAE</h2>
           </div>
           <p>Secure RESTful Peer-to-Peer Skills Exchange Platform</p>
@@ -814,12 +818,12 @@
       <button class="project-modal-close" type="button" data-close-project aria-label="Close Evil Twin project details">×</button>
 
       <div class="project-modal-hero evil-twin-modal-hero">
-        <img src="assets/projects/evil-twin-analysis.jpg" alt="Controlled captive portal simulation and Wireshark packet analysis">
+        <img src="assets/projects/evil-twin-analysis.jpg" alt="Controlled captive portal simulation and Wireshark packet analysis" loading="lazy" decoding="async">
         <div class="project-modal-hero-overlay"></div>
         <div class="project-modal-heading">
           <p class="project-type">Abu Dhabi University · CSE400 Network Security and Forensics</p>
           <div class="project-modal-title-row evil-twin-modal-title-row">
-            <img src="assets/projects/evil-twin-icon.svg" alt="Evil Twin attack simulation icon" class="evil-twin-modal-logo">
+            <img src="assets/projects/evil-twin-icon.svg" alt="Evil Twin attack simulation icon" class="evil-twin-modal-logo" loading="lazy" decoding="async">
             <h2 id="evil-twin-modal-title">Evil Twin Attack</h2>
           </div>
           <p>Raspberry Pi Rogue Access Point and Network Traffic Analysis</p>
@@ -913,12 +917,12 @@
       <button class="project-modal-close" type="button" data-close-project aria-label="Close Raspberry Pi IDS project details">×</button>
 
       <div class="project-modal-hero iot-ids-modal-hero">
-        <img src="assets/projects/iot-ids-hero.svg" alt="Raspberry Pi IDS terminal showing network alerts and monitoring">
+        <img src="assets/projects/iot-ids-hero.svg" alt="Raspberry Pi IDS terminal showing network alerts and monitoring" loading="lazy" decoding="async">
         <div class="project-modal-hero-overlay"></div>
         <div class="project-modal-heading">
           <p class="project-type">IoT Course Project · Raspberry Pi Security</p>
           <div class="project-modal-title-row iot-ids-modal-title-row">
-            <img src="assets/projects/iot-ids-icon.svg" alt="Raspberry Pi IDS icon" class="iot-ids-modal-logo">
+            <img src="assets/projects/iot-ids-icon.svg" alt="Raspberry Pi IDS icon" class="iot-ids-modal-logo" loading="lazy" decoding="async">
             <h2 id="iot-ids-modal-title">Raspberry Pi Network IDS</h2>
           </div>
           <p>Lightweight Network Monitoring and Threat Detection for IoT Devices</p>
@@ -1003,12 +1007,12 @@
       <button class="project-modal-close" type="button" data-close-project aria-label="Close Automatic Gate project details">×</button>
 
       <div class="project-modal-hero automatic-gate-modal-hero">
-        <img src="assets/projects/automatic-gate-state-chart.png" alt="Automatic Gate Control System state-machine diagram">
+        <img src="assets/projects/automatic-gate-state-chart.png" alt="Automatic Gate Control System state-machine diagram" loading="lazy" decoding="async">
         <div class="project-modal-hero-overlay"></div>
         <div class="project-modal-heading">
           <p class="project-type">Internet of Things 2 · TkCircuit Automation</p>
           <div class="project-modal-title-row automatic-gate-modal-title-row">
-            <img src="assets/projects/automatic-gate-icon.svg" alt="Automatic Gate Control System icon" class="automatic-gate-modal-logo">
+            <img src="assets/projects/automatic-gate-icon.svg" alt="Automatic Gate Control System icon" class="automatic-gate-modal-logo" loading="lazy" decoding="async">
             <h2 id="automatic-gate-modal-title">Automatic Gate Control System</h2>
           </div>
           <p>Distance-Based Servo Gate Automation with State-Machine Control</p>
@@ -1086,12 +1090,12 @@
       <button class="project-modal-close" type="button" data-close-project aria-label="Close Temperature Monitoring project details">×</button>
 
       <div class="project-modal-hero temperature-system-modal-hero">
-        <img src="assets/projects/temperature-system-state-chart.png" alt="Temperature Monitoring and Emergency System state-machine diagram">
+        <img src="assets/projects/temperature-system-state-chart.png" alt="Temperature Monitoring and Emergency System state-machine diagram" loading="lazy" decoding="async">
         <div class="project-modal-hero-overlay"></div>
         <div class="project-modal-heading">
           <p class="project-type">Internet of Things 2 · TkCircuit Monitoring</p>
           <div class="project-modal-title-row temperature-system-modal-title-row">
-            <img src="assets/projects/temperature-system-icon.svg" alt="Temperature Monitoring System icon" class="temperature-system-modal-logo">
+            <img src="assets/projects/temperature-system-icon.svg" alt="Temperature Monitoring System icon" class="temperature-system-modal-logo" loading="lazy" decoding="async">
             <h2 id="temperature-system-modal-title">Temperature Monitoring &amp; Emergency System</h2>
           </div>
           <p>Temperature-Based Alerts, State Management, and Ventilation Control</p>
@@ -1169,6 +1173,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260720-mobile-performance" defer></script>
 </body>
 </html>

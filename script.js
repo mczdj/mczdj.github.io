@@ -8,6 +8,10 @@ const cursorGlow = document.querySelector('.cursor-glow');
 const portraitShell = document.querySelector('[data-parallax]');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(pointer: fine)').matches;
+const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
+const compactViewport = window.matchMedia('(max-width: 980px)');
+const limitedHardware = Boolean(navigator.deviceMemory && navigator.deviceMemory <= 4);
+const lowPowerMode = reduceMotion || coarsePointer || compactViewport.matches || limitedHardware;
 
 function closeMenu() {
   navLinks.classList.remove('open');
@@ -25,6 +29,16 @@ menuButton.addEventListener('click', () => {
 });
 
 navItems.forEach((item) => item.addEventListener('click', closeMenu));
+
+const handleViewportChange = (event) => {
+  if (!event.matches) closeMenu();
+};
+
+if (typeof compactViewport.addEventListener === 'function') {
+  compactViewport.addEventListener('change', handleViewportChange);
+} else if (typeof compactViewport.addListener === 'function') {
+  compactViewport.addListener(handleViewportChange);
+}
 
 let scrollTicking = false;
 function updateOnScroll() {
@@ -68,35 +82,43 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((element, index) => {
-  element.style.transitionDelay = `${Math.min((index % 4) * 70, 210)}ms`;
+  element.style.transitionDelay = lowPowerMode ? '0ms' : `${Math.min((index % 4) * 70, 210)}ms`;
   revealObserver.observe(element);
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Pointer-following ambient light.
-if (!reduceMotion && finePointer && cursorGlow) {
+// Pointer-following ambient light. It renders only while the pointer is moving
+// instead of keeping a permanent animation frame loop alive.
+if (!lowPowerMode && finePointer && cursorGlow) {
   let pointerX = window.innerWidth / 2;
   let pointerY = window.innerHeight / 2;
   let glowX = pointerX;
   let glowY = pointerY;
+  let glowFrame = 0;
+
+  const animateGlow = () => {
+    glowX += (pointerX - glowX) * 0.16;
+    glowY += (pointerY - glowY) * 0.16;
+    cursorGlow.style.transform = `translate3d(${glowX - 260}px, ${glowY - 260}px, 0)`;
+
+    const stillMoving = Math.abs(pointerX - glowX) > 0.5 || Math.abs(pointerY - glowY) > 0.5;
+    if (stillMoving) {
+      glowFrame = window.requestAnimationFrame(animateGlow);
+    } else {
+      glowFrame = 0;
+    }
+  };
 
   window.addEventListener('pointermove', (event) => {
     pointerX = event.clientX;
     pointerY = event.clientY;
+    if (!glowFrame) glowFrame = window.requestAnimationFrame(animateGlow);
   }, { passive: true });
-
-  const animateGlow = () => {
-    glowX += (pointerX - glowX) * 0.12;
-    glowY += (pointerY - glowY) * 0.12;
-    cursorGlow.style.transform = `translate3d(${glowX - 260}px, ${glowY - 260}px, 0)`;
-    requestAnimationFrame(animateGlow);
-  };
-  animateGlow();
 }
 
 // Hero portrait parallax.
-if (!reduceMotion && finePointer && portraitShell) {
+if (!lowPowerMode && finePointer && portraitShell) {
   const heroVisual = portraitShell.closest('.hero-visual');
   heroVisual.addEventListener('pointermove', (event) => {
     const rect = heroVisual.getBoundingClientRect();
@@ -117,7 +139,7 @@ if (!reduceMotion && finePointer && portraitShell) {
 }
 
 // 3D tilt and cursor glow for cards.
-if (!reduceMotion && finePointer) {
+if (!lowPowerMode && finePointer) {
   document.querySelectorAll('.interactive-card').forEach((card) => {
     card.addEventListener('pointermove', (event) => {
       const rect = card.getBoundingClientRect();
@@ -174,7 +196,7 @@ document.querySelectorAll('.button').forEach((button) => {
 
 // Typewriter effect for focus areas.
 const typingText = document.querySelector('.typing-text');
-if (typingText && !reduceMotion) {
+if (typingText && !lowPowerMode) {
   const words = ['Networking', 'Penetration Testing', 'AI Security'];
   let wordIndex = 0;
   let characterIndex = words[0].length;
@@ -279,29 +301,30 @@ function updateRotatingCard(cardSelector, iconId, titleId, subtitleId, topic) {
   }, 350);
 }
 
-window.setInterval(() => {
-  topTopicIndex = (topTopicIndex + 1) % topCardTopics.length;
+if (!lowPowerMode) {
+  window.setInterval(() => {
+    if (document.hidden) return;
 
-  updateRotatingCard(
-    ".card-top",
-    "top-card-icon",
-    "top-card-title",
-    "top-card-subtitle",
-    topCardTopics[topTopicIndex]
-  );
-}, 3500);
+    topTopicIndex = (topTopicIndex + 1) % topCardTopics.length;
+    bottomTopicIndex = (bottomTopicIndex + 1) % bottomCardTopics.length;
 
-window.setInterval(() => {
-  bottomTopicIndex = (bottomTopicIndex + 1) % bottomCardTopics.length;
+    updateRotatingCard(
+      ".card-top",
+      "top-card-icon",
+      "top-card-title",
+      "top-card-subtitle",
+      topCardTopics[topTopicIndex]
+    );
 
-  updateRotatingCard(
-    ".card-bottom",
-    "bottom-card-icon",
-    "bottom-card-title",
-    "bottom-card-subtitle",
-    bottomCardTopics[bottomTopicIndex]
-  );
-}, 3500);
+    updateRotatingCard(
+      ".card-bottom",
+      "bottom-card-icon",
+      "bottom-card-title",
+      "bottom-card-subtitle",
+      bottomCardTopics[bottomTopicIndex]
+    );
+  }, 4200);
+}
 
 // Reactive coding-style hero name.
 const reactiveName = document.querySelector('[data-reactive-name]');
@@ -338,7 +361,7 @@ if (reactiveName) {
 
   const runNameDecode = async (force = false) => {
     const now = Date.now();
-    if (reduceMotion || nameAnimationRunning || (!force && now - lastNameAnimation < 2300)) return;
+    if (lowPowerMode || nameAnimationRunning || (!force && now - lastNameAnimation < 2300)) return;
 
     nameAnimationRunning = true;
     lastNameAnimation = now;
@@ -352,14 +375,14 @@ if (reactiveName) {
     nameAnimationRunning = false;
   };
 
-  if (!reduceMotion) {
+  if (!lowPowerMode) {
     window.setTimeout(() => runNameDecode(true), 650);
     reactiveName.addEventListener('pointerenter', () => runNameDecode());
     reactiveName.addEventListener('focus', () => runNameDecode());
     reactiveName.addEventListener('click', () => runNameDecode(true));
   }
 
-  if (!reduceMotion && finePointer) {
+  if (!lowPowerMode && finePointer) {
     reactiveName.addEventListener('pointermove', (event) => {
       const rect = reactiveName.getBoundingClientRect();
       const x = event.clientX - rect.left;
