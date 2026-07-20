@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="title desc">
+  <title id="title">Temperature monitoring and emergency system icon</title>
+  <desc id="desc">A thermometer, ventilation fan, warning alert, and monitoring indicators.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28133a"/>
+      <stop offset=".58" stop-color="#19112e"/>
+      <stop offset="1" stop-color="#071821"/>
+    </linearGradient>
+    <linearGradient id="temp" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff5f7d"/>
+      <stop offset=".55" stop-color="#ffb14a"/>
+      <stop offset="1" stop-color="#5fe9df"/>
+    </linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="344" height="204" rx="28" fill="url(#bg)" stroke="#be7cff" stroke-opacity=".25"/>
+  <circle cx="180" cy="108" r="78" fill="none" stroke="#be7cff" stroke-opacity=".12"/>
+  <circle cx="180" cy="108" r="57" fill="none" stroke="#5fe9df" stroke-opacity=".18" stroke-dasharray="5 8"/>
+  <g transform="translate(78 37)" filter="url(#glow)">
+    <rect x="22" y="8" width="30" height="92" rx="15" fill="#111322" stroke="#f4d8ff" stroke-width="3"/>
+    <rect x="32" y="25" width="10" height="68" rx="5" fill="url(#temp)"/>
+    <circle cx="37" cy="109" r="24" fill="#111322" stroke="#ff768d" stroke-width="4"/>
+    <circle cx="37" cy="109" r="13" fill="#ff687f"/>
+    <path d="M58 31h13M58 49h9M58 67h13" stroke="#d7c8e8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(190 49)" filter="url(#glow)">
+    <circle cx="56" cy="56" r="42" fill="#0c1824" stroke="#5fe9df" stroke-width="3"/>
+    <circle cx="56" cy="56" r="8" fill="#f2f5ff"/>
+    <path d="M56 48c-3-25 7-35 19-31 11 4 13 16 3 27-7 8-14 10-22 4Z" fill="#5fe9df"/>
+    <path d="M64 57c25-3 35 7 31 19-4 11-16 13-27 3-8-7-10-14-4-22Z" fill="#9b5cff"/>
+    <path d="M55 64c3 25-7 35-19 31-11-4-13-16-3-27 7-8 14-10 22-4Z" fill="#ffb14a"/>
+    <path d="M48 55c-25 3-35-7-31-19 4-11 16-13 27-3 8 7 10 14 4 22Z" fill="#ff687f"/>
+  </g>
+  <path d="M168 163l18-31 18 31Z" fill="#ffb14a" stroke="#ffe3a8" stroke-width="2" filter="url(#glow)"/>
+  <path d="M186 142v10M186 157v1" stroke="#371223" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="55" cy="45" r="6" fill="#70f0a8"/>
+  <circle cx="55" cy="66" r="6" fill="#ff607f"/>
+  <path d="M48 186H312" stroke="#6a647a" stroke-opacity=".42" stroke-width="3" stroke-linecap="round"/>
+</svg>

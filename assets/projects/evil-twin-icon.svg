@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">Raspberry Pi Evil Twin lab icon</title>
+  <desc id="desc">Two mirrored wireless access points surrounding a Raspberry Pi rogue access point with a warning shield.</desc>
+  <defs>
+    <linearGradient id="leftSignal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#79f3d0"/>
+      <stop offset="1" stop-color="#42a8ff"/>
+    </linearGradient>
+    <linearGradient id="rightSignal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6f91"/>
+      <stop offset="1" stop-color="#b65cff"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b5cff"/>
+      <stop offset="1" stop-color="#ff4f80"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd66e"/>
+      <stop offset="1" stop-color="#ff8a66"/>
+    </linearGradient>
+    <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke-linecap="round" filter="url(#softGlow)">
+    <path d="M28 101c31-31 78-31 109 0" stroke="url(#leftSignal)" stroke-width="8"/>
+    <path d="M46 122c21-21 52-21 73 0" stroke="url(#leftSignal)" stroke-width="7" opacity=".9"/>
+    <path d="M66 143c11-11 27-11 38 0" stroke="url(#leftSignal)" stroke-width="6" opacity=".82"/>
+    <circle cx="85" cy="161" r="5.5" fill="#74f0c8" stroke="none"/>
+
+    <path d="M183 101c31-31 78-31 109 0" stroke="url(#rightSignal)" stroke-width="8"/>
+    <path d="M201 122c21-21 52-21 73 0" stroke="url(#rightSignal)" stroke-width="7" opacity=".9"/>
+    <path d="M221 143c11-11 27-11 38 0" stroke="url(#rightSignal)" stroke-width="6" opacity=".82"/>
+    <circle cx="240" cy="161" r="5.5" fill="#ff6f91" stroke="none"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <rect x="119" y="58" width="82" height="92" rx="20" fill="url(#board)"/>
+    <rect x="130" y="70" width="60" height="68" rx="13" fill="#10081b" opacity=".94"/>
+    <circle cx="140" cy="82" r="4" fill="#74f0c8"/>
+    <circle cx="180" cy="82" r="4" fill="#ff6f91"/>
+    <path d="M142 98h36M142 109h36M142 120h24" stroke="#e9ddff" stroke-width="3.5" stroke-linecap="round" opacity=".85"/>
+    <path d="M112 78h-12v13h12M112 111h-12v13h12M208 78h12v13h-12M208 111h12v13h-12" fill="none" stroke="#d7c5ff" stroke-width="4" stroke-linecap="round"/>
+    <text x="160" y="135" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">RPI</text>
+  </g>
+
+  <g transform="translate(136 157)" filter="url(#softGlow)">
+    <path d="M24 0c10 7 18 8 24 9v18c0 14-10 24-24 31C10 51 0 41 0 27V9c6-1 14-2 24-9Z" fill="url(#shield)"/>
+    <path d="M24 13v18" stroke="#301022" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="24" cy="39" r="2.8" fill="#301022"/>
+  </g>
+
+  <path d="M86 172c20 17 42 25 74 25s54-8 74-25" fill="none" stroke="#bf9cff" stroke-width="2" stroke-dasharray="5 7" opacity=".38"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 650" role="img" aria-labelledby="title desc">
+  <title id="title">Raspberry Pi IDS terminal and network detection dashboard</title>
+  <desc id="desc">A cybersecurity terminal displays intrusion detection alerts while a Raspberry Pi scans network traffic.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06151d"/><stop offset="1" stop-color="#120b22"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#74f0c8"/><stop offset="1" stop-color="#9b5cff"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1400" height="650" fill="url(#bg)"/>
+  <g opacity=".15" stroke="#74f0c8"><path d="M0 90H1400M0 180H1400M0 270H1400M0 360H1400M0 450H1400M0 540H1400"/><path d="M120 0V650M240 0V650M360 0V650M480 0V650M600 0V650M720 0V650M840 0V650M960 0V650M1080 0V650M1200 0V650"/></g>
+  <rect x="70" y="80" width="730" height="490" rx="26" fill="#050a0f" stroke="#31586a" stroke-width="2"/>
+  <rect x="70" y="80" width="730" height="52" rx="26" fill="#111a23"/>
+  <circle cx="110" cy="106" r="9" fill="#ff6d7e"/><circle cx="140" cy="106" r="9" fill="#f5c451"/><circle cx="170" cy="106" r="9" fill="#74f0c8"/>
+  <text x="215" y="113" fill="#9db6c5" font-family="ui-monospace,monospace" font-size="18">ubuntu@raspberrypi: ~/iot_ids</text>
+  <g font-family="ui-monospace,monospace" font-size="20">
+    <text x="110" y="175" fill="#74f0c8">$ sudo python3 code.py</text>
+    <text x="110" y="223" fill="#e8eef3">[NIDS] Packet monitoring started on wlan0</text>
+    <text x="110" y="271" fill="#ffb45f">[ALERT] Nmap SYN scan detected: 192.168.1.102</text>
+    <text x="110" y="319" fill="#ff6d7e">[ALERT] ARP poisoning attempt detected</text>
+    <text x="110" y="367" fill="#c3a4ff">[LOG] Potential SSH brute force on port 22</text>
+    <text x="110" y="415" fill="#74f0c8">[OK] Event written to logs.txt</text>
+    <text x="110" y="463" fill="#9db6c5">1. Start Packet Sniffing   2. Block IP</text>
+    <text x="110" y="511" fill="#9db6c5">3. Remove IP   4. View Logs   5. Exit</text>
+  </g>
+  <g transform="translate(960 160)" filter="url(#glow)">
+    <circle cx="140" cy="140" r="150" fill="none" stroke="#74f0c8" opacity=".3"/>
+    <circle cx="140" cy="140" r="112" fill="none" stroke="#9b5cff" stroke-dasharray="10 14" opacity=".6"/>
+    <path d="M140 140 270 65" stroke="#74f0c8" stroke-width="4" opacity=".7"/>
+    <rect x="73" y="73" width="134" height="134" rx="26" fill="#0c1320" stroke="url(#accent)" stroke-width="7"/>
+    <rect x="105" y="105" width="70" height="70" rx="14" fill="url(#accent)"/>
+    <text x="140" y="143" text-anchor="middle" fill="#08111a" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="800">RPI</text>
+    <text x="140" y="165" text-anchor="middle" fill="#08111a" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="800">NIDS</text>
+    <circle cx="270" cy="65" r="10" fill="#ff6d7e"/><circle cx="46" cy="234" r="8" fill="#74f0c8"/><circle cx="236" cy="258" r="8" fill="#c3a4ff"/>
+  </g>
+  <text x="958" y="540" fill="#e8f8f3" font-family="Space Grotesk,Arial,sans-serif" font-size="42" font-weight="700">Edge Intrusion Detection</text>
+  <text x="958" y="580" fill="#9db6c5" font-family="Inter,Arial,sans-serif" font-size="20">Live monitoring · Alerting · Logging · IP controls</text>
+</svg>
