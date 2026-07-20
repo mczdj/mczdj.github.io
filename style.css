@@ -4685,3 +4685,20 @@ body.project-modal-open {
     top: 44%;
   }
 }
+
+/* =========================================================
+   Fix Evil Twin icon position on hover
+   The earlier hover rule used !important and removed the
+   centering translation, so preserve both translation and scale.
+   ========================================================= */
+#projects .evil-twin-project:hover .evil-twin-card-icon {
+  top: 43% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(1.045) !important;
+}
+
+@media (max-width: 620px) {
+  #projects .evil-twin-project:hover .evil-twin-card-icon {
+    top: 44% !important;
+  }
+}
