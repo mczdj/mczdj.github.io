@@ -6398,3 +6398,21 @@ svg {
     transform: none;
   }
 }
+
+/* =========================================================
+   Fix: keep Cybersecurity Practice Platform backgrounds visible
+   The platform cards also use .interactive-card, which defines the
+   same ::before pseudo-element with opacity: 0 until hover.
+   ========================================================= */
+.practice-platform-card::before,
+.practice-platform-card:hover::before {
+  opacity: 1 !important;
+}
+
+.practice-platform-card-htb {
+  color: #0b1118 !important;
+}
+
+.practice-platform-card-htb .practice-platform-copy strong {
+  color: #0b1118 !important;
+}

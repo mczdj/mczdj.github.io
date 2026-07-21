@@ -8,7 +8,7 @@
 [![GitHub Pages](https://img.shields.io/badge/HOSTED_WITH-GITHUB_PAGES-111827?style=for-the-badge&logo=githubpages&logoColor=white)](https://mczdj.github.io/)
 [![Responsive](https://img.shields.io/badge/DESIGN-RESPONSIVE-14B8A6?style=for-the-badge)](https://mczdj.github.io/)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-mczdj2-C11111?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/mczdj2)
-[![Hack The Box](https://img.shields.io/badge/Hack_The_Box-Profile_2035138-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
+[![Hack The Box](https://img.shields.io/badge/Hack_The_Box-mczdj-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
 
 **This repository contains the source code and supporting files for my personal cybersecurity portfolio.**
 
@@ -85,7 +85,7 @@ I continue developing my practical skills through guided security labs, network 
 | Platform | Profile | Practical focus |
 |---|---|---|
 | **TryHackMe** | [@mczdj2](https://tryhackme.com/p/mczdj2) | Guided rooms, cybersecurity foundations, networking, offensive security, and defensive security |
-| **Hack The Box** | [Profile 2035138](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs) | Machines, labs, challenges, exploitation practice, and technical problem-solving |
+| **Hack The Box** | [@mczdj](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs) | Machines, labs, challenges, exploitation practice, and technical problem-solving |
 
 > These profiles show my ongoing hands-on learning. Platform statistics and completed activities may change as I continue practising.
 
@@ -167,7 +167,7 @@ mczdj.github.io/
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohamed_Idris-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohamed-idris-055345212/)
 [![GitHub](https://img.shields.io/badge/GitHub-mczdj-181717?style=for-the-badge&logo=github)](https://github.com/mczdj)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-mczdj2-C11111?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/mczdj2)
-[![Hack The Box](https://img.shields.io/badge/Hack_The_Box-2035138-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
+[![Hack The Box](https://img.shields.io/badge/Hack_The_Box-mczdj-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
 [![Email](https://img.shields.io/badge/Email-MohamedIdres7%40outlook.com-0078D4?style=for-the-badge&logo=microsoftoutlook)](mailto:MohamedIdres7@outlook.com)
 
 </div>
