@@ -50,6 +50,10 @@ function updateOnScroll() {
     if (currentPosition >= section.offsetTop) currentSection = section.id;
   });
 
+  if (currentSection === 'volunteering' || currentSection === 'events') {
+    currentSection = 'experience';
+  }
+
   navItems.forEach((item) => {
     const href = item.getAttribute('href');
     if (!href || !href.startsWith('#')) return;

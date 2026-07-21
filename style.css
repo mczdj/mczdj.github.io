@@ -5618,3 +5618,515 @@ svg {
     contain-intrinsic-size: auto 900px;
   }
 }
+
+
+/* =========================================================
+   Work experience, leadership and event sections
+   ========================================================= */
+.experience-section,
+.leadership-section,
+.events-section {
+  overflow: clip;
+}
+
+.experience-jump-links {
+  display: flex;
+  margin: -20px 0 34px;
+  padding: 6px;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(13, 8, 22, 0.72);
+}
+
+.experience-jump-links a {
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: #b9adc8;
+  font-size: 0.76rem;
+  font-weight: 700;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.experience-jump-links a:hover,
+.experience-jump-links a.active {
+  color: #fff;
+  background: rgba(155, 92, 255, 0.18);
+}
+
+.work-feature-card {
+  position: relative;
+  display: grid;
+  margin-bottom: 42px;
+  padding: 34px;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 34px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(174, 122, 255, 0.34);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 12% 35%, rgba(155, 92, 255, 0.2), transparent 27%),
+    linear-gradient(145deg, rgba(25, 14, 42, 0.96), rgba(9, 6, 16, 0.98));
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+.work-feature-card::after {
+  position: absolute;
+  right: -90px;
+  bottom: -110px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(174, 122, 255, 0.12);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.work-feature-visual {
+  position: relative;
+  display: grid;
+  width: 160px;
+  height: 160px;
+  place-items: center;
+}
+
+.work-feature-code {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  width: 88px;
+  height: 88px;
+  place-items: center;
+  border: 1px solid rgba(195, 164, 255, 0.48);
+  border-radius: 24px;
+  color: #f2eaff;
+  background: rgba(155, 92, 255, 0.16);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  box-shadow: 0 0 34px rgba(155, 92, 255, 0.28);
+}
+
+.work-feature-ring,
+.work-feature-ring::before {
+  position: absolute;
+  inset: 4px;
+  border: 1px dashed rgba(174, 122, 255, 0.32);
+  border-radius: 50%;
+  content: "";
+}
+
+.work-feature-ring::before {
+  inset: 18px;
+  border-style: solid;
+  border-color: rgba(96, 237, 204, 0.18);
+}
+
+.work-feature-copy {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+}
+
+.work-entry-heading {
+  display: flex;
+  margin-bottom: 8px;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.work-entry-heading > div {
+  min-width: 0;
+}
+
+.work-company,
+.event-organization {
+  margin: 0 0 6px;
+  color: var(--accent-soft);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-entry-heading h3,
+.leadership-card h3,
+.event-card h3 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.work-location {
+  margin: 0 0 18px;
+  color: #968aa5;
+  font-size: 0.82rem;
+}
+
+.work-date-badge,
+.work-type-badge,
+.leadership-date,
+.event-year {
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  align-items: center;
+  border: 1px solid rgba(174, 122, 255, 0.26);
+  border-radius: 999px;
+  color: #dfd1f5;
+  background: rgba(155, 92, 255, 0.09);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.work-points {
+  display: grid;
+  margin: 16px 0 20px;
+  padding: 0;
+  gap: 9px;
+  list-style: none;
+}
+
+.work-points li {
+  position: relative;
+  padding-left: 18px;
+  color: #b6aabd;
+  font-size: 0.87rem;
+  line-height: 1.65;
+}
+
+.work-points li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(155, 92, 255, 0.65);
+  content: "";
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.experience-tags span {
+  display: inline-flex;
+  padding: 6px 9px;
+  border: 1px solid rgba(174, 122, 255, 0.18);
+  border-radius: 999px;
+  color: #bcaed0;
+  background: rgba(155, 92, 255, 0.055);
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+.work-timeline {
+  position: relative;
+}
+
+.work-timeline::before {
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 174px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(155, 92, 255, 0.52), rgba(155, 92, 255, 0.08));
+  content: "";
+}
+
+.work-entry {
+  position: relative;
+  display: grid;
+  padding: 0 0 24px;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 58px;
+}
+
+.work-entry-date {
+  padding-top: 27px;
+  color: #aa9abf;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.work-entry-marker {
+  position: absolute;
+  top: 31px;
+  left: 168px;
+  z-index: 2;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--bg);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 16px rgba(155, 92, 255, 0.65);
+}
+
+.work-entry-card {
+  min-width: 0;
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: linear-gradient(145deg, rgba(18, 11, 29, 0.94), rgba(10, 7, 17, 0.96));
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.work-entry-card:hover {
+  border-color: rgba(174, 122, 255, 0.32);
+  transform: translateY(-2px);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.leadership-card,
+.event-card {
+  position: relative;
+  min-width: 0;
+  padding: 26px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: linear-gradient(145deg, rgba(18, 11, 29, 0.94), rgba(10, 7, 17, 0.97));
+}
+
+.leadership-card-wide {
+  grid-column: 1 / -1;
+}
+
+.leadership-card-top {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leadership-icon {
+  display: grid;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 9px;
+  place-items: center;
+  border: 1px solid rgba(174, 122, 255, 0.3);
+  border-radius: 14px;
+  color: #f2eaff;
+  background: rgba(155, 92, 255, 0.12);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.leadership-card > p:not(.work-company),
+.event-card > p:not(.event-organization):not(.event-role) {
+  margin: 12px 0 18px;
+  color: #ada1b7;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.event-card {
+  min-height: 270px;
+}
+
+.event-year {
+  margin-bottom: 22px;
+}
+
+.event-role {
+  margin: 10px 0 0;
+  color: #d8c8ef;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1080px) {
+  .work-feature-card {
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .work-feature-visual {
+    width: 130px;
+    height: 130px;
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-card {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 760px) {
+  .experience-jump-links {
+    margin-top: -8px;
+    border-radius: 20px;
+  }
+
+  .experience-jump-links a {
+    flex: 1 1 140px;
+    text-align: center;
+  }
+
+  .work-feature-card {
+    padding: 24px 20px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .work-feature-visual {
+    width: 108px;
+    height: 108px;
+  }
+
+  .work-feature-code {
+    width: 66px;
+    height: 66px;
+    border-radius: 19px;
+    font-size: 1.25rem;
+  }
+
+  .work-entry-heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .work-date-badge,
+  .work-type-badge,
+  .leadership-date {
+    white-space: normal;
+  }
+
+  .work-timeline::before {
+    left: 6px;
+  }
+
+  .work-entry {
+    padding: 0 0 20px 28px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .work-entry-date {
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .work-entry-marker {
+    top: 4px;
+    left: 0;
+  }
+
+  .work-entry-card {
+    padding: 20px;
+  }
+
+  .leadership-grid,
+  .events-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .leadership-card-wide {
+    grid-column: auto;
+  }
+
+  .event-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .work-feature-card,
+  .work-entry-card,
+  .leadership-card,
+  .event-card {
+    padding: 18px;
+  }
+
+  .experience-tags span {
+    font-size: 0.63rem;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .work-entry-card:hover {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   Work experience consistency and selected client projects
+   ========================================================= */
+.work-client-projects {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(195, 164, 255, 0.14);
+}
+
+.work-client-label {
+  margin: 0 0 10px;
+  color: var(--accent-soft);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.work-client-list span {
+  display: inline-flex;
+  min-height: 31px;
+  padding: 7px 11px;
+  align-items: center;
+  border: 1px solid rgba(116, 240, 200, 0.24);
+  border-radius: 999px;
+  color: #dffbf2;
+  background: rgba(14, 55, 48, 0.34);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 620px) {
+  .work-client-list {
+    gap: 7px;
+  }
+
+  .work-client-list span {
+    max-width: 100%;
+    padding: 6px 9px;
+    font-size: 0.67rem;
+    white-space: normal;
+  }
+}
