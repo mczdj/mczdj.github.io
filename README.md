@@ -7,6 +7,8 @@
 [![Live Portfolio](https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-mczdj.github.io-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://mczdj.github.io/)
 [![GitHub Pages](https://img.shields.io/badge/HOSTED_WITH-GITHUB_PAGES-111827?style=for-the-badge&logo=githubpages&logoColor=white)](https://mczdj.github.io/)
 [![Responsive](https://img.shields.io/badge/DESIGN-RESPONSIVE-14B8A6?style=for-the-badge)](https://mczdj.github.io/)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-mczdj2-C11111?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/mczdj2)
+[![Hack The Box](https://img.shields.io/badge/Hack_The_Box-Profile_2035138-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
 
 **This repository contains the source code and supporting files for my personal cybersecurity portfolio.**
 
@@ -31,6 +33,7 @@ The website is designed to be responsive across desktop computers, tablets, and 
 | **Home** | Professional introduction and focus areas |
 | **About** | Education, interests, and career direction |
 | **Skills** | Cybersecurity, networking, programming, tools, and platforms |
+| **Practice Profiles** | Direct access to my TryHackMe and Hack The Box accounts |
 | **Projects** | Academic and practical case studies with technologies and results |
 | **Certifications** | Selected credentials most relevant to cybersecurity |
 | **Work Experience** | Technical and non-technical roles with transferable skills |
@@ -65,6 +68,26 @@ TkCircuit and Raspberry Pi GPIO simulation using distance-based control, servo m
 IoT monitoring simulation with temperature states, alerts, buzzer control, and automated ventilation response.
 
 </details>
+
+---
+
+## 🧪 Hands-On Cybersecurity Practice
+
+I continue developing my practical skills through guided security labs, network exercises, machines, and challenges on dedicated cybersecurity learning platforms.
+
+<div align="center">
+
+[![TryHackMe Profile](https://img.shields.io/badge/TryHackMe-View_mczdj2-C11111?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/mczdj2)
+[![Hack The Box Profile](https://img.shields.io/badge/Hack_The_Box-View_Profile-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
+
+</div>
+
+| Platform | Profile | Practical focus |
+|---|---|---|
+| **TryHackMe** | [@mczdj2](https://tryhackme.com/p/mczdj2) | Guided rooms, cybersecurity foundations, networking, offensive security, and defensive security |
+| **Hack The Box** | [Profile 2035138](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs) | Machines, labs, challenges, exploitation practice, and technical problem-solving |
+
+> These profiles show my ongoing hands-on learning. Platform statistics and completed activities may change as I continue practising.
 
 ---
 
@@ -135,6 +158,7 @@ mczdj.github.io/
 
 ---
 
+
 ## 🔗 Connect With Me
 
 <div align="center">
@@ -142,6 +166,8 @@ mczdj.github.io/
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Website-8B5CF6?style=for-the-badge)](https://mczdj.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohamed_Idris-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohamed-idris-055345212/)
 [![GitHub](https://img.shields.io/badge/GitHub-mczdj-181717?style=for-the-badge&logo=github)](https://github.com/mczdj)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-mczdj2-C11111?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/mczdj2)
+[![Hack The Box](https://img.shields.io/badge/Hack_The_Box-2035138-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=111827)](https://app.hackthebox.com/users/2035138?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs)
 [![Email](https://img.shields.io/badge/Email-MohamedIdres7%40outlook.com-0078D4?style=for-the-badge&logo=microsoftoutlook)](mailto:MohamedIdres7@outlook.com)
 
 </div>
