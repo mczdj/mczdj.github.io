@@ -135,36 +135,6 @@ mczdj.github.io/
 
 ---
 
-## 💻 Run the Portfolio Locally
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/mczdj/mczdj.github.io.git
-```
-
-2. Open the project folder:
-
-```bash
-cd mczdj.github.io
-```
-
-3. Open `index.html` directly in a browser, or use the **Live Server** extension in Visual Studio Code.
-
----
-
-## 🔄 Updating the Live Website
-
-This website is hosted using GitHub Pages. Any committed update to the configured `main` branch is automatically deployed to the live portfolio.
-
-```text
-Edit files → Commit changes → GitHub Pages deploys → Live website updates
-```
-
-For major updates, the CSS and JavaScript version values in `index.html` may be changed to prevent browsers from loading older cached files.
-
----
-
 ## 🔗 Connect With Me
 
 <div align="center">
