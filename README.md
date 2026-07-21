@@ -1,122 +1,187 @@
-# Mohamed Ibrahim Idris — Cybersecurity Portfolio
+<div align="center">
 
-A responsive single-page portfolio designed for GitHub Pages.
+# 🛡️ Mohamed Idris — Cybersecurity Portfolio
 
-## Included sections
+### Cybersecurity Engineering Student · Network Security · Penetration Testing · IoT Security
 
-- Home and professional introduction
-- About
-- Skills and tools
-- Project placeholders
-- Certification placeholders
-- Part-time experience placeholder
-- Contact links
+[![Live Portfolio](https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-mczdj.github.io-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://mczdj.github.io/)
+[![GitHub Pages](https://img.shields.io/badge/HOSTED_WITH-GITHUB_PAGES-111827?style=for-the-badge&logo=githubpages&logoColor=white)](https://mczdj.github.io/)
+[![Responsive](https://img.shields.io/badge/DESIGN-RESPONSIVE-14B8A6?style=for-the-badge)](https://mczdj.github.io/)
 
-## Add your personal photo
+**This repository contains the source code and supporting files for my personal cybersecurity portfolio.**
 
-1. Add your photo to the `assets` folder.
-2. Name it `profile.jpg`.
-3. In `index.html`, find:
+🌐 **Live website:** [https://mczdj.github.io/](https://mczdj.github.io/)
 
-```html
-<img src="assets/profile-placeholder.svg" alt="Placeholder for Mohamed's profile photo">
+</div>
+
+---
+
+## 👋 About the Portfolio
+
+This portfolio presents my academic projects, practical security work, technical skills, certifications, work experience, volunteering, and professional activities as I develop my career in cybersecurity engineering.
+
+The website is designed to be responsive across desktop computers, tablets, and mobile phones. It combines a dark cybersecurity-inspired interface with interactive project cards, case-study popups, certificate previews, and optimized visual effects.
+
+---
+
+## 🧭 Explore the Website
+
+| Section | What it contains |
+|---|---|
+| **Home** | Professional introduction and focus areas |
+| **About** | Education, interests, and career direction |
+| **Skills** | Cybersecurity, networking, programming, tools, and platforms |
+| **Projects** | Academic and practical case studies with technologies and results |
+| **Certifications** | Selected credentials most relevant to cybersecurity |
+| **Work Experience** | Technical and non-technical roles with transferable skills |
+| **Leadership & Volunteering** | Student engagement, coordination, mentoring, and event leadership |
+| **Contact** | Email, LinkedIn, and GitHub links |
+
+---
+
+## 🚀 Featured Projects
+
+<details open>
+<summary><strong>Click to view the projects included in the portfolio</strong></summary>
+
+<br>
+
+### 01 — NetSentinel
+Automated phishing detection and DNS security platform designed to filter malicious traffic, enrich suspicious domains, and support centralized monitoring.
+
+### 02 — SkillSwap UAE
+RESTful peer-to-peer skills exchange platform developed with distributed-system and secure web-application concepts.
+
+### 03 — Evil Twin Attack Simulation
+Authorized academic network-security simulation using a Raspberry Pi rogue access point, DNS/DHCP/HTTP services, packet capture, and Wireshark analysis.
+
+### 04 — Raspberry Pi Network IDS
+Lightweight intrusion-detection system for IoT environments with packet monitoring, attack detection, alert logging, and results validation.
+
+### 05 — Automatic Gate Control System
+TkCircuit and Raspberry Pi GPIO simulation using distance-based control, servo movement, status indicators, and state-machine logic.
+
+### 06 — Temperature Monitoring & Emergency System
+IoT monitoring simulation with temperature states, alerts, buzzer control, and automated ventilation response.
+
+</details>
+
+---
+
+## 🎓 Certificates Archive
+
+The portfolio website displays a selected group of certificates that are most valuable for a cybersecurity student. However, this repository also contains a complete archive of my certificates, including technical, programming, data, event, and professional-development credentials that are not displayed on the website.
+
+📁 **Browse the complete archive:** [Certificates folder](./Certificates/)
+
+<details>
+<summary><strong>What can be found in the Certificates folder?</strong></summary>
+
+<br>
+
+- Cisco Networking Academy cybersecurity certificates
+- TryHackMe learning-path certificates
+- Cybersecurity and penetration-testing workshop certificates
+- Python, Java, database, HTML, and CSS certificates
+- IBM Cognitive Class certificates and digital badges
+- Event coordination and participation certificates
+- Additional academic and professional-development achievements
+
+> The certificates shown on the live portfolio are intentionally curated to keep the website focused on cybersecurity. The repository archive preserves the complete record of my learning and participation.
+
+</details>
+
+---
+
+## 🧰 Technologies Used
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111827)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white)
+![Responsive Design](https://img.shields.io/badge/Responsive_Design-14B8A6?style=flat-square)
+
+</div>
+
+---
+
+## ✨ Interactive Features
+
+- Responsive navigation for desktop, tablet, and mobile screens
+- Animated cybersecurity grid, particles, and ambient effects
+- Interactive project cards and detailed case-study popups
+- Certificate previews with direct document access
+- Scroll progress and reveal animations
+- Touch-device and reduced-motion support
+- Lazy-loaded and optimized images for improved performance
+- Accessible keyboard and navigation behavior
+
+---
+
+## 📂 Repository Structure
+
+```text
+mczdj.github.io/
+├── index.html            # Portfolio content and page structure
+├── style.css             # Design, responsive layout, and animations
+├── script.js             # Navigation and interactive behavior
+├── README.md             # Repository overview
+├── .nojekyll             # GitHub Pages configuration
+├── assets/               # Images, project documents, and portfolio certificates
+└── Certificates/         # Complete certificate archive
 ```
 
-4. Replace it with:
+---
 
-```html
-<img src="assets/profile.jpg" alt="Mohamed Ibrahim Idris">
+## 💻 Run the Portfolio Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mczdj/mczdj.github.io.git
 ```
 
-5. Remove this line from the same area:
+2. Open the project folder:
 
-```html
-<div class="photo-note">Replace with your photo</div>
+```bash
+cd mczdj.github.io
 ```
 
-A portrait photo with the subject centred and some space around the shoulders will work best.
+3. Open `index.html` directly in a browser, or use the **Live Server** extension in Visual Studio Code.
 
-## Add projects
+---
 
-Search `index.html` for `Your first project`, `Your second project`, and `Your third project`. Replace each placeholder title, description, and category with your real project information.
+## 🔄 Updating the Live Website
 
-A good project description should explain:
+This website is hosted using GitHub Pages. Any committed update to the configured `main` branch is automatically deployed to the live portfolio.
 
-- The problem or objective
-- Your role
-- Tools and technologies
-- Main result
-- What you learned
-- Repository, report, or demonstration link
+```text
+Edit files → Commit changes → GitHub Pages deploys → Live website updates
+```
 
-## Add certifications
+For major updates, the CSS and JavaScript version values in `index.html` may be changed to prevent browsers from loading older cached files.
 
-Search for `Certification name` and `Course or digital badge` in `index.html`, then replace the placeholder text with:
+---
 
-- Certificate name
-- Issuing organisation
-- Date completed
-- Main skills
-- Credential link
+## 🔗 Connect With Me
 
-## Add part-time jobs
+<div align="center">
 
-Search for `Part-time job title` in `index.html`. Include the employer, dates, responsibilities, achievements, and transferable skills.
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Website-8B5CF6?style=for-the-badge)](https://mczdj.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohamed_Idris-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohamed-idris-055345212/)
+[![GitHub](https://img.shields.io/badge/GitHub-mczdj-181717?style=for-the-badge&logo=github)](https://github.com/mczdj)
+[![Email](https://img.shields.io/badge/Email-MohamedIdres7%40outlook.com-0078D4?style=for-the-badge&logo=microsoftoutlook)](mailto:MohamedIdres7@outlook.com)
 
-## Preview locally
+</div>
 
-Open `index.html` directly in your browser, or use the Live Server extension in Visual Studio Code.
+---
 
-## Publish with GitHub Pages
+<div align="center">
 
-1. Create a new GitHub repository, for example `cybersecurity-portfolio`.
-2. Upload all files in this folder to the repository root.
-3. Open the repository's **Settings**.
-4. Select **Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select the `main` branch and the `/ (root)` folder.
-7. Save and wait for GitHub to publish the site.
+### Built and maintained by Mohamed Ibrahim Idris
 
-Your project site will usually be available at:
+*Cybersecurity is not only about identifying threats — it is about building systems, awareness, and resilience.*
 
-`https://mczdj.github.io/cybersecurity-portfolio/`
-
-For a personal root site at `https://mczdj.github.io/`, name the repository exactly `mczdj.github.io`.
-
-## Files
-
-- `index.html` — website content
-- `style.css` — design and responsive layout
-- `script.js` — navigation and reveal effects
-- `assets/` — profile image and favicon
-
-
-## Interactive effects included
-
-- Scroll progress indicator
-- Mouse-following ambient glow
-- Animated cybersecurity grid and particles
-- Hero portrait parallax and rotating orbits
-- Typewriter focus-area line
-- 3D card tilt and cursor spotlight
-- Magnetic buttons with ripple feedback
-- Accessible reduced-motion support
-## Brand icons
-
-The Tools and Platforms section uses official brand marks from the Simple Icons collection, delivered through the Iconify SVG API.
-
-
-
-## Project 03 — Evil Twin Attack Simulation
-
-A controlled Network Security and Forensics lab using a Raspberry Pi as a rogue access point, with DNS/DHCP/HTTP services, packet capture, and Wireshark analysis. The portfolio clearly labels the work as an authorised academic simulation.
-
-
-## Projects currently included
-
-- NetSentinel DNS security platform
-- SkillSwap UAE distributed web application
-- Evil Twin attack simulation
-- Raspberry Pi Network IDS
-- Automatic Gate Control System
-- Temperature Monitoring and Emergency System
+</div>
