@@ -67,6 +67,12 @@ TkCircuit and Raspberry Pi GPIO simulation using distance-based control, servo m
 ### 06 — Temperature Monitoring & Emergency System
 IoT monitoring simulation with temperature states, alerts, buzzer control, and automated ventilation response.
 
+### 07 — SecurePass Password Security Platform
+Web application and browser extension for password generation, strength analysis, university-policy validation, common-password detection, and breach-exposure awareness.
+
+- [Live web application](https://kshlb.github.io/Securepass/)
+- [GitHub repository](https://github.com/kshlb/Securepass)
+
 </details>
 
 ---

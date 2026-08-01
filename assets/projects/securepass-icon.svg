@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+<title id="title">SecurePass password security web application and browser extension</title>
+<desc id="desc">A browser window, extension tile, shield lock, password field, policy checklist, and security analysis indicators.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#170713"/><stop offset=".52" stop-color="#3a0b25"/><stop offset="1" stop-color="#09070f"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff3864"/><stop offset="1" stop-color="#b64cff"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="760" height="420" rx="34" fill="url(#bg)"/>
+<g opacity=".28" stroke="#ff5d83" fill="none"><circle cx="390" cy="205" r="132"/><circle cx="390" cy="205" r="166" stroke-dasharray="6 9"/><path d="M30 90h190M540 330h190M80 350l120-80M560 90l120 75"/></g>
+<g transform="translate(145 88)">
+  <rect width="470" height="250" rx="24" fill="#0d0b13" stroke="#ff5d83" stroke-opacity=".45" stroke-width="2"/>
+  <rect width="470" height="44" rx="24" fill="#1c121f"/><circle cx="25" cy="22" r="6" fill="#ff5d83"/><circle cx="47" cy="22" r="6" fill="#ffcc66"/><circle cx="69" cy="22" r="6" fill="#7df4bd"/>
+  <rect x="108" y="13" width="250" height="18" rx="9" fill="#302238"/><path d="M375 12h70v20h-70z" fill="#3d1730"/>
+  <rect x="28" y="72" width="270" height="56" rx="14" fill="#17121c" stroke="#492239"/><circle cx="52" cy="100" r="13" fill="#2b1725"/><path d="M46 100h12M52 94v12" stroke="#ff6c91" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#ffedf2"><circle cx="86" cy="100" r="4"/><circle cx="101" cy="100" r="4"/><circle cx="116" cy="100" r="4"/><circle cx="131" cy="100" r="4"/><circle cx="146" cy="100" r="4"/><circle cx="161" cy="100" r="4"/><circle cx="176" cy="100" r="4"/><circle cx="191" cy="100" r="4"/></g>
+  <rect x="315" y="72" width="127" height="56" rx="14" fill="#24131e" stroke="#ff5d83" stroke-opacity=".4"/><text x="378" y="96" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">SECURITY SCORE</text><text x="378" y="119" text-anchor="middle" fill="#7df4bd" font-family="Arial,sans-serif" font-size="24" font-weight="800">100</text>
+  <g transform="translate(28 151)" font-family="Arial,sans-serif" font-size="12">
+    <rect width="195" height="71" rx="14" fill="#151019" stroke="#352039"/><text x="18" y="24" fill="#ffb2c2" font-weight="700">POLICY VALIDATION</text>
+    <g fill="#7df4bd"><circle cx="19" cy="44" r="4"/><circle cx="19" cy="60" r="4"/></g><text x="31" y="48" fill="#efe5ee">Length and complexity</text><text x="31" y="64" fill="#efe5ee">Common-password check</text>
+  </g>
+  <g transform="translate(242 151)" font-family="Arial,sans-serif" font-size="12">
+    <rect width="200" height="71" rx="14" fill="#151019" stroke="#352039"/><text x="18" y="24" fill="#ffb2c2" font-weight="700">EXPOSURE CHECK</text><circle cx="19" cy="48" r="4" fill="#7df4bd"/><text x="31" y="52" fill="#efe5ee">No breach match detected</text>
+  </g>
+</g>
+<g transform="translate(82 52)" filter="url(#glow)"><path d="M60 0 110 19v39c0 43-24 75-50 89C34 133 10 101 10 58V19Z" fill="url(#accent)"/><path d="M60 35a20 20 0 0 0-20 20v11h-7v39h54V66h-7V55a20 20 0 0 0-20-20Zm0 11a9 9 0 0 1 9 9v11H51V55a9 9 0 0 1 9-9Z" fill="#130b16"/></g>
+<g transform="translate(615 74)"><path d="M33 0h42v22c0 8 6 14 14 14h22v43H89c-8 0-14 6-14 14v22H33V93c0-8-6-14-14-14H0V36h19c8 0 14-6 14-14Z" fill="#26142e" stroke="#d35cff" stroke-width="3"/><path d="M43 44h25v10H43zm0 22h25v10H43z" fill="#ff6c91"/></g>
+</svg>

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://api.iconify.design" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260801-new-certifications-v1">
+  <link rel="stylesheet" href="style.css?v=20260801-securepass-project-v1">
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
@@ -271,7 +271,7 @@
             <p class="section-kicker">Selected work</p>
             <h2>Projects</h2>
           </div>
-          <p>Hands-on academic and personal projects demonstrating cybersecurity engineering, distributed systems, IoT automation, network analysis, and practical problem-solving.</p>
+          <p>Hands-on academic and personal projects demonstrating cybersecurity engineering, password security, distributed systems, IoT automation, network analysis, and practical problem-solving.</p>
         </div>
 
         <div class="projects-grid">
@@ -299,6 +299,34 @@
               </div>
               <div class="project-links">
                 <button class="project-details-button" type="button" data-open-project="netsentinel-modal">Explore case study</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card securepass-project reveal interactive-card">
+            <div class="project-visual securepass-visual">
+              <div class="securepass-network" aria-hidden="true"></div>
+              <img
+                src="assets/projects/securepass-icon.svg"
+                alt="SecurePass password security web application and browser extension"
+                class="securepass-card-icon"
+                loading="lazy" decoding="async">
+              <small class="project-visual-badge securepass-badge">Password Security</small>
+            </div>
+            <div class="project-content">
+              <p class="project-type">ADU IT Internship Project · Web Security</p>
+              <h3>SecurePass</h3>
+              <p class="project-subtitle">Password Security Web Application and Browser Extension</p>
+              <p class="project-summary">Co-developed a web application and companion browser extension that generate passwords, assess strength, validate policy requirements, and check for common or previously exposed credentials.</p>
+              <div class="project-tech-tags" aria-label="Project capabilities">
+                <span>Web App</span>
+                <span>Browser Extension</span>
+                <span>Password Analysis</span>
+                <span>Breach Checks</span>
+                <span>GitHub</span>
+              </div>
+              <div class="project-links">
+                <button class="project-details-button" type="button" data-open-project="securepass-modal">Explore case study</button>
               </div>
             </div>
           </article>
@@ -1567,6 +1595,89 @@
           <a class="button button-primary" href="https://github.com/mczdj/Temperature-Sensor-System" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
           <a class="button button-secondary" href="https://github.com/mczdj/Temperature-Sensor-System/blob/main/temperature_conditions.py" target="_blank" rel="noopener noreferrer">View Source Code</a>
           <a class="button button-secondary" href="assets/projects/temperature-system-state-chart.png" target="_blank" rel="noopener noreferrer">View State Diagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-modal" id="securepass-modal" role="dialog" aria-modal="true" aria-labelledby="securepass-modal-title" hidden>
+    <div class="project-modal-backdrop" data-close-project aria-hidden="true"></div>
+    <div class="project-modal-panel securepass-modal-panel" role="document">
+      <button class="project-modal-close" type="button" data-close-project aria-label="Close SecurePass project details">×</button>
+
+      <div class="project-modal-hero securepass-modal-hero">
+        <img src="assets/projects/securepass-hero.svg" alt="SecurePass password-analysis dashboard and browser-extension concept" loading="lazy" decoding="async">
+        <div class="project-modal-hero-overlay"></div>
+        <div class="project-modal-heading">
+          <p class="project-type">Abu Dhabi University IT Internship · Cybersecurity Project</p>
+          <div class="project-modal-title-row securepass-modal-title-row">
+            <img src="assets/projects/securepass-icon.svg" alt="SecurePass icon" class="securepass-modal-logo" loading="lazy" decoding="async">
+            <h2 id="securepass-modal-title">SecurePass</h2>
+          </div>
+          <p>Password Security Web Application and Browser Extension</p>
+        </div>
+      </div>
+
+      <div class="project-modal-body">
+        <div class="project-overview-grid">
+          <section>
+            <p class="project-detail-label">The challenge</p>
+            <h3>Making password policies easier to follow</h3>
+            <p>Students frequently needed support when creating passwords that satisfied university requirements. They needed clear guidance on length, character variety, and unsafe or commonly used password choices rather than repeated failed attempts.</p>
+          </section>
+          <section>
+            <p class="project-detail-label">The solution</p>
+            <h3>Immediate, understandable security feedback</h3>
+            <p>SecurePass combines a web application with a browser extension to generate random passwords, analyse user-selected passwords, show satisfied and missing policy requirements, and provide common-password and breach-exposure awareness.</p>
+          </section>
+        </div>
+
+        <div class="project-metrics" aria-label="SecurePass project highlights">
+          <div><strong>2</strong><span>Interfaces: web application and browser extension</span></div>
+          <div><strong>12+</strong><span>Character university-policy baseline</span></div>
+          <div><strong>Live</strong><span>Strength and policy feedback</span></div>
+          <div><strong>2 checks</strong><span>Common-password and breach-exposure awareness</span></div>
+        </div>
+
+        <div class="project-detail-grid">
+          <section class="project-detail-card">
+            <p class="project-detail-label">Key capabilities</p>
+            <ul>
+              <li>Random password generation</li>
+              <li>Password-strength analysis and scoring</li>
+              <li>Clear indication of satisfied and missing policy requirements</li>
+              <li>Local common-password checking based on the rockyou.txt dataset</li>
+              <li>Breach-exposure checking and security guidance</li>
+              <li>Companion browser-extension workflow</li>
+            </ul>
+          </section>
+
+          <section class="project-detail-card">
+            <p class="project-detail-label">My contribution</p>
+            <p>As part of a two-person team, I helped convert a recurring user-support problem into functional requirements, shape understandable feedback, test different password examples, and coordinate development through version control.</p>
+            <p class="project-detail-label project-detail-label-spaced">What I learned</p>
+            <p>The project strengthened my understanding that secure password policies must be paired with clear, practical guidance that helps users make safer choices.</p>
+          </section>
+        </div>
+
+        <section class="project-stack-section securepass-stack-section">
+          <p class="project-detail-label">Project focus</p>
+          <div class="project-stack-list">
+            <span>Web Application</span>
+            <span>Browser Extension</span>
+            <span>Password Generation</span>
+            <span>Strength Analysis</span>
+            <span>Policy Validation</span>
+            <span>Common-Password Detection</span>
+            <span>Breach Awareness</span>
+            <span>rockyou.txt</span>
+            <span>Git &amp; GitHub</span>
+          </div>
+        </section>
+
+        <div class="project-document-links">
+          <a class="button button-primary" href="https://kshlb.github.io/Securepass/" target="_blank" rel="noopener noreferrer">Open Live Web App</a>
+          <a class="button button-secondary" href="https://github.com/kshlb/Securepass" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
         </div>
       </div>
     </div>

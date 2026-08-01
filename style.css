@@ -6436,3 +6436,102 @@ svg {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================================
+   SecurePass password-security project
+   ========================================================= */
+.securepass-project {
+  position: relative;
+  border-color: rgba(255, 73, 111, 0.42);
+  background: linear-gradient(155deg, rgba(49, 10, 27, 0.95), rgba(11, 8, 18, 0.99));
+}
+
+.securepass-project::after {
+  position: absolute;
+  right: 12%;
+  bottom: -1px;
+  left: 12%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ff4b76, #b75cff, transparent);
+  content: "";
+}
+
+.securepass-visual {
+  position: relative;
+  display: grid;
+  min-height: 230px;
+  padding: 18px;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  border-bottom-color: rgba(255, 80, 120, 0.24);
+  background:
+    radial-gradient(circle at 52% 47%, rgba(255, 62, 105, 0.24), transparent 42%),
+    linear-gradient(150deg, rgba(45, 8, 25, 0.99), rgba(8, 7, 14, 0.99));
+}
+
+.securepass-visual::after { display: none; }
+.securepass-network {
+  position: absolute;
+  inset: 16px;
+  z-index: 0;
+  border: 1px solid rgba(255, 91, 130, 0.18);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 12% 22%, rgba(116, 240, 200, .9) 0 2px, transparent 3px),
+    radial-gradient(circle at 88% 24%, rgba(255, 95, 131, .9) 0 2px, transparent 3px),
+    radial-gradient(circle at 83% 82%, rgba(183, 92, 255, .85) 0 2px, transparent 3px),
+    linear-gradient(32deg, transparent 49.7%, rgba(255, 95, 131, .09) 50%, transparent 50.3%),
+    linear-gradient(-32deg, transparent 49.7%, rgba(183, 92, 255, .09) 50%, transparent 50.3%);
+  box-shadow: inset 0 0 50px rgba(255, 65, 111, .05);
+  pointer-events: none;
+}
+
+.securepass-card-icon {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: min(285px, 88%);
+  max-height: 158px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(255, 72, 113, .28)) drop-shadow(0 0 36px rgba(183, 92, 255, .2));
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.securepass-project:hover .securepass-card-icon {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 22px rgba(255, 93, 132, .5)) drop-shadow(0 0 42px rgba(183, 92, 255, .33));
+}
+
+.securepass-badge {
+  border-color: rgba(255, 104, 139, .48) !important;
+  color: #ffe0e8 !important;
+  background: rgba(52, 8, 27, .88) !important;
+}
+
+.securepass-project .project-type { color: #ffb4c6; }
+.securepass-project .project-tech-tags span {
+  border-color: rgba(255, 104, 139, .25);
+  background: rgba(202, 53, 104, .08);
+}
+.securepass-project:hover .project-tech-tags span { border-color: rgba(255, 104, 139, .44); }
+.securepass-project .project-details-button::after { color: #ff8eaa; }
+
+.securepass-modal-panel {
+  border-color: rgba(255, 86, 124, .44);
+  box-shadow: 0 35px 120px rgba(0,0,0,.65), 0 0 72px rgba(232, 46, 105, .15);
+}
+.securepass-modal-hero img { object-position: center; filter: saturate(.92) brightness(.62) contrast(1.04); }
+.securepass-modal-hero .project-modal-hero-overlay {
+  background: linear-gradient(90deg, rgba(11,5,13,.97) 0%, rgba(11,5,13,.73) 44%, rgba(11,5,13,.12) 88%), linear-gradient(180deg, transparent 42%, #0d0815 100%);
+}
+.securepass-modal-logo { width: 82px; height: 52px; object-fit: contain; }
+.securepass-stack-section { border-color: rgba(255, 87, 126, .18); }
+
+#projects .securepass-card-icon { width: min(205px, 76%); max-height: 118px; }
+#projects .securepass-network { inset: 12px; border-radius: 16px; }
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .securepass-project:hover .securepass-card-icon { transform: none; }
+}
