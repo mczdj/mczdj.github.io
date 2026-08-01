@@ -103,6 +103,8 @@ The portfolio website displays a selected group of certificates that are most va
 <br>
 
 - Cisco Networking Academy cybersecurity certificates
+- Red Hat System Administration training and badge
+- Udemy AI security and WordPress security certificates
 - TryHackMe learning-path certificates
 - Cybersecurity and penetration-testing workshop certificates
 - Python, Java, database, HTML, and CSS certificates
@@ -113,6 +115,15 @@ The portfolio website displays a selected group of certificates that are most va
 > The certificates shown on the live portfolio are intentionally curated to keep the website focused on cybersecurity. The repository archive preserves the complete record of my learning and participation.
 
 </details>
+
+### Latest cybersecurity-related additions
+
+- **AI & Cyber Security Mastery 2026** — Udemy, completed July 2026
+- **WordPress Security** — Udemy, completed July 2026
+- **Red Hat System Administration I (RH124)** — Red Hat Academy attendance course, completed June 2026
+
+These credentials have also been added to the live portfolio because they support AI security awareness, web security, Linux administration, and secure infrastructure skills.
+
 
 ---
 
