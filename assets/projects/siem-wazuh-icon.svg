@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#04161c"/><stop offset="1" stop-color="#10102b"/></linearGradient><linearGradient id="g" x1="0" x2="1"><stop stop-color="#2dd4bf"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="720" height="360" rx="34" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#5eead4" stroke-width="2"><path d="M360 180L105 86M360 180L105 274M360 180L615 86M360 180L615 274"/></g>
+  <g fill="#0f2330" stroke="#2dd4bf" stroke-opacity=".6" stroke-width="3"><rect x="60" y="56" width="120" height="70" rx="14"/><rect x="60" y="234" width="120" height="70" rx="14"/><rect x="540" y="56" width="120" height="70" rx="14"/><rect x="540" y="234" width="120" height="70" rx="14"/></g>
+  <g fill="#ccfbf1" font-family="Arial" font-size="18" font-weight="700"><text x="87" y="98">Linux Agent</text><text x="87" y="276">Windows</text><text x="565" y="98">Web Server</text><text x="570" y="276">Endpoint</text></g>
+  <circle cx="360" cy="180" r="95" fill="#08131e" stroke="url(#g)" stroke-width="5" filter="url(#glow)"/>
+  <path d="M360 107l58 29v52c0 45-28 76-58 91-30-15-58-46-58-91v-52z" fill="#5b21b6" stroke="#2dd4bf" stroke-width="5"/>
+  <path d="M328 182l22 22 43-50" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="311" y="329" font-family="Arial" font-size="23" fill="#a7f3d0" font-weight="700">Wazuh SIEM • Rules • Alerts</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a0710"/><stop offset="1" stop-color="#120b2a"/></linearGradient><linearGradient id="g" x1="0" x2="1"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+  <rect width="720" height="360" rx="34" fill="url(#bg)"/>
+  <g transform="translate(178 50)"><circle cx="180" cy="130" r="112" fill="#100a18" stroke="#4c1d95" stroke-width="5"/><circle cx="180" cy="130" r="78" fill="none" stroke="#7c3aed" stroke-width="5"/><circle cx="180" cy="130" r="42" fill="none" stroke="#fb7185" stroke-width="5"/><circle cx="180" cy="130" r="12" fill="#fb7185"/><path d="M180 18V242M68 130H292" stroke="#8b5cf6" stroke-width="2" opacity=".55"/><path d="M180 130l85-70" stroke="#f43f5e" stroke-width="8" stroke-linecap="round"/><path d="M265 60l-17 3 8 14z" fill="#f43f5e"/></g>
+  <g fill="#fecdd3" font-family="Arial" font-weight="700"><text x="56" y="60" font-size="22">CTF • Recon • Enumeration</text><text x="438" y="302" font-size="22">TryHackMe • Hack The Box</text></g>
+  <g transform="translate(65 250)" fill="#111827" stroke="url(#g)" stroke-width="3"><rect width="138" height="54" rx="14"/><rect x="160" width="138" height="54" rx="14"/></g>
+  <g fill="#fff" font-family="Arial" font-size="18" font-weight="700"><text x="92" y="284">Kali Linux</text><text x="258" y="284">Burp + Nmap</text></g>
+</svg>

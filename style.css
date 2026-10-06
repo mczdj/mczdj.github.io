@@ -1508,9 +1508,12 @@ h1 span {
 
 .hero-visual {
   perspective: 1100px;
+  align-items: center;
 }
 
 .portrait-shell {
+  width: min(470px, 100%);
+  aspect-ratio: 1 / 1.16;
   transform: perspective(1100px) rotateX(var(--hero-rx, 0deg)) rotateY(var(--hero-ry, 0deg)) translate3d(var(--hero-x, 0px), var(--hero-y, 0px), 0);
   transform-style: preserve-3d;
   transition: transform 0.2s ease-out;
@@ -1518,18 +1521,18 @@ h1 span {
 }
 
 .portrait-shell::before {
-  inset: 10% 4% 4%;
+  inset: 8% 3% 3%;
   animation: portraitGlow 4.2s ease-in-out infinite alternate;
 }
 
 .portrait-frame {
   position: absolute;
   z-index: 2;
-  inset: 10% 6% 7%;
+  inset: 8% 5% 5%;
   width: auto;
   overflow: hidden;
   border: 1px solid rgba(195, 164, 255, 0.7);
-  border-radius: 46% 46% 30% 30%;
+  border-radius: 40% 40% 24% 24%;
   background: linear-gradient(160deg, #28143e, #100a1a);
   box-shadow:
     0 28px 75px rgba(0, 0, 0, 0.46),
@@ -1566,13 +1569,13 @@ h1 span {
   height: 100%;
   aspect-ratio: auto;
   object-fit: cover;
-  object-position: center top;
-  transform: scale(1.03);
+  object-position: 46% 12%;
+  transform: scale(1.12);
   transition: transform 0.5s ease;
 }
 
 .portrait-shell:hover .portrait-frame img {
-  transform: scale(1.07);
+  transform: scale(1.16);
 }
 
 .photo-note {
@@ -5114,7 +5117,7 @@ svg {
   }
 
   .portrait-shell {
-    width: min(400px, 100%);
+    width: min(430px, 100%);
     max-width: 100%;
   }
 
@@ -5234,7 +5237,7 @@ svg {
   }
 
   .portrait-shell {
-    width: min(420px, 100%);
+    width: min(440px, 100%);
     max-width: 100%;
     margin-inline: auto;
   }
@@ -6534,4 +6537,447 @@ svg {
 
 @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
   .securepass-project:hover .securepass-card-icon { transform: none; }
+}
+
+/* =========================================================
+   CV-tailored portfolio additions — Oct 2026
+   ========================================================= */
+.about-actions {
+  display: flex;
+  margin-top: 22px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cv-skills-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cv-skills-grid .skill-card {
+  min-height: 250px;
+}
+
+/* Security project visuals added from the latest CV. */
+.cyber-project-visual {
+  position: relative;
+  display: grid;
+  min-height: 230px;
+  padding: 14px;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(150deg, rgba(11, 12, 26, .98), rgba(7, 6, 13, .99));
+}
+
+.cyber-project-visual::after {
+  display: none;
+}
+
+.cyber-project-card-icon {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: min(305px, 94%);
+  max-height: 164px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(139, 92, 246, .18));
+  transition: transform .3s ease, filter .3s ease;
+}
+
+.project-card:hover .cyber-project-card-icon {
+  transform: scale(1.035);
+  filter: drop-shadow(0 0 25px rgba(139, 92, 246, .34));
+}
+
+.log-analyzer-project { border-color: rgba(103, 232, 249, .32); background: linear-gradient(155deg, rgba(7, 27, 39, .96), rgba(11, 8, 18, .99)); }
+.siem-project { border-color: rgba(45, 212, 191, .34); background: linear-gradient(155deg, rgba(5, 35, 34, .95), rgba(11, 8, 18, .99)); }
+.virtual-lab-project { border-color: rgba(129, 140, 248, .34); background: linear-gradient(155deg, rgba(19, 23, 55, .95), rgba(11, 8, 18, .99)); }
+.red-team-project { border-color: rgba(251, 113, 133, .34); background: linear-gradient(155deg, rgba(48, 8, 25, .95), rgba(11, 8, 18, .99)); }
+
+.log-analyzer-project .project-type { color: #a5f3fc; }
+.siem-project .project-type { color: #99f6e4; }
+.virtual-lab-project .project-type { color: #c7d2fe; }
+.red-team-project .project-type { color: #fecdd3; }
+
+.log-analyzer-project .project-tech-tags span { border-color: rgba(103,232,249,.22); background: rgba(34,211,238,.06); }
+.siem-project .project-tech-tags span { border-color: rgba(45,212,191,.22); background: rgba(45,212,191,.06); }
+.virtual-lab-project .project-tech-tags span { border-color: rgba(129,140,248,.22); background: rgba(99,102,241,.07); }
+.red-team-project .project-tech-tags span { border-color: rgba(251,113,133,.22); background: rgba(244,63,94,.06); }
+
+.log-analyzer-badge { border-color: rgba(250, 204, 21, .48) !important; color: #fff7c2 !important; background: rgba(55, 40, 5, .9) !important; }
+.siem-badge { border-color: rgba(45, 212, 191, .5) !important; color: #d9fff8 !important; background: rgba(5, 43, 39, .9) !important; }
+.virtual-lab-badge { border-color: rgba(129, 140, 248, .48) !important; color: #e1e7ff !important; background: rgba(20, 22, 58, .9) !important; }
+.red-team-badge { border-color: rgba(251, 113, 133, .5) !important; color: #ffe0e6 !important; background: rgba(56, 7, 25, .9) !important; }
+
+/* Current certification target banner. */
+.cert-progress-card {
+  display: flex;
+  margin: 0 0 34px;
+  padding: 18px 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border: 1px solid rgba(116, 240, 200, .28);
+  border-radius: 16px;
+  background: linear-gradient(120deg, rgba(8, 37, 31, .72), rgba(22, 11, 39, .76));
+  box-shadow: 0 18px 42px rgba(0,0,0,.22);
+}
+
+.cert-progress-card > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-progress-label {
+  color: #9ff4d7;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.cert-progress-card strong {
+  color: #f7f3ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+}
+
+.cert-progress-status {
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  border: 1px solid rgba(116, 240, 200, .38);
+  border-radius: 999px;
+  color: #d8fff2;
+  background: rgba(7, 46, 37, .75);
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.certification-note a {
+  color: #cbb5ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Keep expanded project set visually balanced. */
+#projects .project-card {
+  height: 100%;
+}
+
+#projects .project-content {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+#projects .project-links {
+  margin-top: auto;
+}
+
+@media (max-width: 1100px) {
+  .cv-skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cv-skills-grid .skill-card { min-height: 0; }
+}
+
+@media (max-width: 620px) {
+  .cv-skills-grid { grid-template-columns: 1fr; }
+  .about-actions { flex-direction: column; align-items: stretch; }
+  .about-actions .button { width: 100%; justify-content: center; }
+  .cert-progress-card { align-items: flex-start; flex-direction: column; }
+  .cyber-project-card-icon { width: min(270px, 92%); max-height: 145px; }
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .project-card:hover .cyber-project-card-icon { transform: none; }
+}
+
+/* =========================================================
+   Hero polish — cleaner text/photo balance
+   ========================================================= */
+.hero {
+  min-height: min(920px, 92vh);
+  padding-top: 132px;
+  padding-bottom: 78px;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(380px, 0.92fr);
+  gap: clamp(48px, 6vw, 88px);
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 700px;
+}
+
+.eyebrow {
+  margin-bottom: 20px;
+}
+
+.intro-line {
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+  letter-spacing: 0.18em;
+}
+
+.hero-name {
+  margin-bottom: 18px;
+}
+
+.hero-role {
+  max-width: 650px;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin-bottom: 28px;
+  color: rgba(230, 222, 241, 0.82);
+  line-height: 1.8;
+}
+
+.hero-actions {
+  gap: 12px;
+}
+
+.hero-actions .button {
+  min-height: 48px;
+  padding-inline: 20px;
+}
+
+.social-row {
+  margin-top: 26px;
+  gap: 18px;
+}
+
+.hero-visual {
+  justify-content: flex-end;
+  align-items: center;
+  overflow: visible;
+}
+
+.portrait-shell {
+  width: min(455px, 100%);
+  aspect-ratio: 4 / 5;
+}
+
+.portrait-shell::before {
+  inset: 4% 1% 1%;
+  border-radius: 34px;
+  background: linear-gradient(155deg, rgba(155, 92, 255, 0.32), rgba(67, 25, 125, 0.04));
+  box-shadow: 0 34px 82px rgba(69, 24, 131, 0.26);
+}
+
+.portrait-frame {
+  inset: 3% 4% 3%;
+  border-radius: 30px;
+  border-color: rgba(195, 164, 255, 0.56);
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(155, 92, 255, 0.06),
+    inset 0 0 34px rgba(155, 92, 255, 0.05);
+}
+
+.portrait-frame img {
+  object-position: 47% 18%;
+  transform: scale(1.045);
+}
+
+.portrait-shell:hover .portrait-frame img {
+  transform: scale(1.075);
+}
+
+.orbit-one {
+  inset: 0 -2% -2%;
+  opacity: 0.55;
+}
+
+.orbit-two {
+  inset: 6% -5% 5% 4%;
+  opacity: 0.38;
+}
+
+.floating-card {
+  min-width: 154px;
+  padding: 11px 12px;
+  gap: 9px;
+  border-radius: 13px;
+  background: rgba(16, 10, 26, 0.78);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.3);
+}
+
+.floating-card .card-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 10px;
+}
+
+.card-top {
+  top: 10%;
+  right: -3%;
+}
+
+.card-bottom {
+  bottom: 8%;
+  left: -5%;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding-top: 124px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(330px, 0.82fr);
+    gap: 44px;
+  }
+
+  .portrait-shell {
+    width: min(420px, 100%);
+  }
+
+  .card-top {
+    right: 0;
+  }
+
+  .card-bottom {
+    left: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .hero {
+    min-height: auto;
+    padding-top: 122px;
+    padding-bottom: 72px;
+  }
+
+  .hero-grid {
+    gap: 46px;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+    margin-inline: auto;
+  }
+
+  .hero-role,
+  .hero-text {
+    margin-inline: auto;
+  }
+
+  .hero-visual {
+    justify-content: center;
+  }
+
+  .portrait-shell {
+    width: min(430px, 100%);
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-top: 108px;
+    padding-bottom: 58px;
+  }
+
+  .hero-grid {
+    gap: 32px;
+  }
+
+  .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .intro-line {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-role {
+    font-size: 1rem;
+  }
+
+  .hero-text {
+    margin-bottom: 24px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .social-row {
+    margin-top: 22px;
+    gap: 14px;
+  }
+
+  .portrait-shell {
+    width: min(350px, 100%);
+  }
+
+  .portrait-frame {
+    inset: 2% 3% 2%;
+    border-radius: 24px;
+  }
+
+  .portrait-frame img {
+    object-position: 47% 16%;
+    transform: scale(1.035);
+  }
+
+  .portrait-shell:hover .portrait-frame img {
+    transform: scale(1.035);
+  }
+
+  .orbit {
+    opacity: 0.22;
+  }
+
+  .floating-card {
+    width: auto;
+    min-width: 132px;
+    max-width: 148px;
+    padding: 8px 9px;
+  }
+
+  .floating-card .card-icon {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+
+  .card-top {
+    top: 8%;
+    right: 1%;
+  }
+
+  .card-bottom {
+    bottom: 6%;
+    left: 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions .button {
+    flex: 1 1 100%;
+  }
+
+  .portrait-shell {
+    width: min(320px, 100%);
+  }
+
+  .floating-card {
+    display: none;
+  }
 }

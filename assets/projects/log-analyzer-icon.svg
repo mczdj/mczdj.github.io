@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07131f"/><stop offset="1" stop-color="#1a0d2c"/></linearGradient>
+    <linearGradient id="g" x1="0" x2="1"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="720" height="360" rx="34" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#67e8f9"><path d="M50 70H670M50 120H670M50 170H670M50 220H670M50 270H670"/><path d="M120 35V325M220 35V325M320 35V325M420 35V325M520 35V325M620 35V325"/></g>
+  <rect x="120" y="78" width="480" height="210" rx="20" fill="#07101a" stroke="#3dd6ff" stroke-opacity=".55"/>
+  <circle cx="150" cy="108" r="6" fill="#fb7185"/><circle cx="170" cy="108" r="6" fill="#fbbf24"/><circle cx="190" cy="108" r="6" fill="#34d399"/>
+  <g font-family="monospace" font-size="20" fill="#b8d8e8"><text x="150" y="150">AUTH LOG STREAM</text><text x="150" y="185" fill="#fb7185">FAIL  user=admin  src=10.0.0.24</text><text x="150" y="218" fill="#fbbf24">WARN  password-spray pattern</text><text x="150" y="251" fill="#67e8f9">ALERT brute-force threshold hit</text></g>
+  <path d="M555 110l45 22v45c0 35-23 60-45 71-22-11-45-36-45-71v-45z" fill="#5b21b6" stroke="url(#g)" stroke-width="5" filter="url(#glow)"/>
+  <path d="M535 177l13 13 28-32" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

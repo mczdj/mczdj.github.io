@@ -2,7 +2,7 @@
 
 # 🛡️ Mohamed Idris — Cybersecurity Portfolio
 
-### Cybersecurity Engineering Student · Network Security · Penetration Testing · IoT Security
+### Cybersecurity Engineering Graduate · Security Operations · Network Defence · Offensive Security
 
 [![Live Portfolio](https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-mczdj.github.io-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://mczdj.github.io/)
 [![GitHub Pages](https://img.shields.io/badge/HOSTED_WITH-GITHUB_PAGES-111827?style=for-the-badge&logo=githubpages&logoColor=white)](https://mczdj.github.io/)
@@ -20,7 +20,7 @@
 
 ## 👋 About the Portfolio
 
-This portfolio presents my academic projects, practical security work, technical skills, certifications, work experience, volunteering, and professional activities as I develop my career in cybersecurity engineering.
+This portfolio presents my cybersecurity projects, hands-on security labs, technical skills, certifications, work experience, volunteering, and professional activities as I begin my career as a Cybersecurity Engineering graduate. My current focus includes security operations, SIEM and log analysis, network defence, virtualization, and practical offensive-security training.
 
 The website is designed to be responsive across desktop computers, tablets, and mobile phones. It combines a dark cybersecurity-inspired interface with interactive project cards, case-study popups, certificate previews, and optimized visual effects.
 
@@ -49,29 +49,43 @@ The website is designed to be responsive across desktop computers, tablets, and 
 
 <br>
 
-### 01 — NetSentinel
-Automated phishing detection and DNS security platform designed to filter malicious traffic, enrich suspicious domains, and support centralized monitoring.
+### 01 — Security Log Analyzer & Monitor
+TypeScript authentication-log analyzer in development with validation and detection logic for brute-force, password-spraying, and distributed-login activity.
 
-### 02 — SkillSwap UAE
-RESTful peer-to-peer skills exchange platform developed with distributed-system and secure web-application concepts.
+- [GitHub repository](https://github.com/mczdj/security-log-analyzer)
 
-### 03 — Evil Twin Attack Simulation
-Authorized academic network-security simulation using a Raspberry Pi rogue access point, DNS/DHCP/HTTP services, packet capture, and Wireshark analysis.
+### 02 — Raspberry Pi SIEM & Security Monitoring
+Wazuh SIEM lab on Raspberry Pi for centralized log collection, agents, detection rules, alerts, and suspicious-event monitoring.
 
-### 04 — Raspberry Pi Network IDS
-Lightweight intrusion-detection system for IoT environments with packet monitoring, attack detection, alert logging, and results validation.
+### 03 — Virtualized Cybersecurity Lab
+VMware ESXi lab using a Dell PowerEdge server, Ubuntu routing, DHCP/NAT, Kali Linux, vulnerable VMs, virtual switches, and Tailscale remote access.
 
-### 05 — Automatic Gate Control System
-TkCircuit and Raspberry Pi GPIO simulation using distance-based control, servo movement, status indicators, and state-machine logic.
+### 04 — Red Team Practice & CTFs
+Ongoing TryHackMe and Hack The Box practice covering reconnaissance, enumeration, web testing, network analysis, and attack-path investigation.
 
-### 06 — Temperature Monitoring & Emergency System
-IoT monitoring simulation with temperature states, alerts, buzzer control, and automated ventilation response.
+### 05 — NetSentinel
+Automated phishing detection and DNS-security platform for filtering malicious traffic and centralized monitoring.
 
-### 07 — SecurePass Password Security Platform
-Web application and browser extension for password generation, strength analysis, university-policy validation, common-password detection, and breach-exposure awareness.
+### 06 — Evil Twin Attack Simulation
+Controlled Raspberry Pi rogue-access-point simulation with DNS/HTTP traffic capture and Wireshark analysis.
+
+### 07 — Raspberry Pi Network IDS
+Python and Scapy-based network intrusion detection with simulated attack testing, alert review, and validation.
+
+### 08 — SecurePass Password Security Platform
+Web application and browser extension for password generation, strength analysis, policy validation, common-password detection, and breach-exposure awareness.
 
 - [Live web application](https://kshlb.github.io/Securepass/)
 - [GitHub repository](https://github.com/kshlb/Securepass)
+
+### 09 — SkillSwap UAE
+Java, Spring Boot, and MySQL peer-to-peer skills exchange platform with authenticated users, REST services, and BCrypt password hashing.
+
+### 10 — Automatic Gate Control System
+Raspberry Pi and TkCircuit automation simulation using distance-based control, servo movement, status indicators, and state-machine logic.
+
+### 11 — Temperature Monitoring & Emergency System
+IoT monitoring simulation with temperature states, buzzer and LED alerts, and automated ventilation response.
 
 </details>
 
@@ -99,7 +113,7 @@ I continue developing my practical skills through guided security labs, network 
 
 ## 🎓 Certificates Archive
 
-The portfolio website displays a selected group of certificates that are most valuable for a cybersecurity student. However, this repository also contains a complete archive of my certificates, including technical, programming, data, event, and professional-development credentials that are not displayed on the website.
+The portfolio website displays a selected group of certificates and technical training that are most valuable for my cybersecurity career. However, this repository also contains a complete archive of my certificates, including technical, programming, data, event, and professional-development credentials that are not displayed on the website.
 
 📁 **Browse the complete archive:** [Certificates folder](./Certificates/)
 
@@ -124,9 +138,13 @@ The portfolio website displays a selected group of certificates that are most va
 
 ### Latest cybersecurity-related additions
 
-- **AI & Cyber Security Mastery 2026** — Udemy, completed July 2026
-- **WordPress Security** — Udemy, completed July 2026
-- **Red Hat System Administration I (RH124)** — Red Hat Academy attendance course, completed June 2026
+- **Hacker Holidays** — TryHackMe, August 2026
+- **Bug Bounty Session** — Khlybalak Security attendance, September 2026
+- **Introduction to Cybersecurity** — Cisco Networking Academy, February 2026
+- **AI & Cyber Security Mastery 2026** — Udemy, July 2026
+- **WordPress Security** — Udemy, July 2026
+- **Red Hat System Administration I (RH124)** — Red Hat Academy attendance course, June 2026
+- **Certified Ethical Hacker (CEH)** — currently in progress
 
 These credentials have also been added to the live portfolio because they support AI security awareness, web security, Linux administration, and secure infrastructure skills.
 

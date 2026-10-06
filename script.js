@@ -201,7 +201,7 @@ document.querySelectorAll('.button').forEach((button) => {
 // Typewriter effect for focus areas.
 const typingText = document.querySelector('.typing-text');
 if (typingText && !lowPowerMode) {
-  const words = ['Networking', 'Penetration Testing', 'AI Security'];
+  const words = ['Security Operations', 'SIEM & Log Analysis', 'Network Security', 'Penetration Testing', 'AI Security'];
   let wordIndex = 0;
   let characterIndex = words[0].length;
   let deleting = true;
@@ -236,49 +236,17 @@ if (typingText && !lowPowerMode) {
 updateOnScroll();
 
 const topCardTopics = [
-  {
-    icon: "NS",
-    title: "Network Security",
-    subtitle: "Core interest"
-  },
-  {
-    icon: "PT",
-    title: "Penetration Testing",
-    subtitle: "Practical focus"
-  },
-  {
-    icon: "WS",
-    title: "Web Security",
-    subtitle: "Technical interest"
-  },
-  {
-    icon: "SO",
-    title: "Security Operations",
-    subtitle: "Career interest"
-  }
+  { icon: "SO", title: "Security Operations", subtitle: "Career focus" },
+  { icon: "SI", title: "SIEM & Log Analysis", subtitle: "Defensive focus" },
+  { icon: "NS", title: "Network Security", subtitle: "Core strength" },
+  { icon: "PT", title: "Penetration Testing", subtitle: "Practical focus" }
 ];
 
 const bottomCardTopics = [
-  {
-    icon: "AI",
-    title: "AI Security",
-    subtitle: "Learning focus"
-  },
-  {
-    icon: "TA",
-    title: "Threat Analysis",
-    subtitle: "Developing skill"
-  },
-  {
-    icon: "IR",
-    title: "Incident Response",
-    subtitle: "Learning focus"
-  },
-  {
-    icon: "CS",
-    title: "Cloud Security",
-    subtitle: "Future focus"
-  }
+  { icon: "LA", title: "Log Analysis", subtitle: "Hands-on practice" },
+  { icon: "TA", title: "Threat Analysis", subtitle: "Developing skill" },
+  { icon: "IR", title: "Incident Response", subtitle: "Learning focus" },
+  { icon: "AI", title: "AI Security", subtitle: "Specialized interest" }
 ];
 
 let topTopicIndex = 0;
