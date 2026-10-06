@@ -6981,3 +6981,376 @@ svg {
     display: none;
   }
 }
+
+/* =========================================================
+   2026 responsive layout pass
+   Optimized for wide desktop, laptop, tablet and phone.
+   ========================================================= */
+:root {
+  --container: 1440px;
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.container {
+  width: min(92vw, var(--container));
+}
+
+/* Hero: use the available screen without looking tiny on large monitors. */
+.hero {
+  min-height: 100svh;
+  padding-top: clamp(118px, 12vh, 158px);
+  padding-bottom: clamp(64px, 8vh, 100px);
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
+  gap: clamp(48px, 6vw, 104px);
+  align-items: center;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: 760px;
+}
+
+.hero-name {
+  font-size: clamp(4.35rem, 5.7vw, 7.25rem);
+  line-height: 0.9;
+}
+
+.hero-role {
+  max-width: 720px;
+  font-size: clamp(1.06rem, 1.35vw, 1.38rem);
+}
+
+.hero-text {
+  max-width: 700px;
+  font-size: clamp(1rem, 1.02vw, 1.08rem);
+}
+
+.hero-actions {
+  align-items: stretch;
+}
+
+.hero-actions .button {
+  white-space: nowrap;
+}
+
+.hero-visual {
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+}
+
+.portrait-shell {
+  width: clamp(390px, 32vw, 525px);
+  max-width: 100%;
+  aspect-ratio: 4 / 5;
+}
+
+.portrait-shell::before {
+  inset: 2.5% 0.5% 0.5%;
+  border-radius: 36px;
+}
+
+.portrait-frame {
+  inset: 2.5% 3.5% 2.5%;
+  border-radius: 30px;
+}
+
+.portrait-frame img {
+  object-fit: cover;
+  object-position: 50% 27%;
+  transform: scale(1.02);
+}
+
+.portrait-shell:hover .portrait-frame img {
+  transform: scale(1.055);
+}
+
+.card-top {
+  top: 8%;
+  right: -4%;
+}
+
+.card-bottom {
+  bottom: 7%;
+  left: -5%;
+}
+
+/* Wide desktop / 2K-style viewports */
+@media (min-width: 1600px) {
+  :root {
+    --container: 1500px;
+  }
+
+  .container {
+    width: min(88vw, var(--container));
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(480px, 0.92fr);
+  }
+
+  .hero-name {
+    font-size: clamp(5.4rem, 5.35vw, 7.6rem);
+  }
+
+  .portrait-shell {
+    width: clamp(470px, 30vw, 560px);
+  }
+}
+
+/* Standard laptops and smaller desktop displays */
+@media (max-width: 1360px) {
+  :root {
+    --container: 1220px;
+  }
+
+  .container {
+    width: min(calc(100% - 48px), var(--container));
+  }
+
+  .hero {
+    padding-top: 124px;
+    padding-bottom: 72px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(350px, 0.82fr);
+    gap: clamp(36px, 4vw, 62px);
+  }
+
+  .hero-name {
+    font-size: clamp(3.9rem, 6.1vw, 6.1rem);
+  }
+
+  .portrait-shell {
+    width: clamp(350px, 34vw, 440px);
+  }
+
+  .floating-card {
+    min-width: 142px;
+  }
+}
+
+/* Tablet / small laptop: stack hero for consistent legibility. */
+@media (max-width: 1024px) {
+  .container {
+    width: min(calc(100% - 40px), 900px);
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 118px;
+    padding-bottom: 72px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero-name {
+    margin-inline: auto;
+    font-size: clamp(4rem, 10vw, 6.1rem);
+  }
+
+  .hero-role,
+  .hero-text {
+    margin-inline: auto;
+  }
+
+  .hero-actions,
+  .social-row {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .portrait-shell {
+    width: min(470px, 88vw);
+  }
+}
+
+/* Tablets in portrait and large phones. */
+@media (max-width: 768px) {
+  .container,
+  #projects .container {
+    width: min(calc(100% - 32px), 700px);
+  }
+
+  .section {
+    padding-block: 72px;
+  }
+
+  .hero {
+    padding-top: 108px;
+    padding-bottom: 58px;
+  }
+
+  .hero-grid {
+    gap: 34px;
+  }
+
+  .hero-name {
+    padding-inline: 12px;
+    font-size: clamp(3.3rem, 13vw, 4.9rem);
+  }
+
+  .hero-role {
+    font-size: clamp(0.98rem, 3.2vw, 1.12rem);
+  }
+
+  .hero-text {
+    max-width: 620px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 160px;
+    min-height: 48px;
+  }
+
+  .social-row {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .portrait-shell {
+    width: min(410px, 90vw);
+  }
+
+  .floating-card {
+    min-width: 130px;
+    max-width: 148px;
+    padding: 8px 9px;
+  }
+
+  .card-top {
+    top: 7%;
+    right: 0;
+  }
+
+  .card-bottom {
+    bottom: 5%;
+    left: 0;
+  }
+}
+
+/* Phones */
+@media (max-width: 560px) {
+  .container,
+  #projects .container {
+    width: min(calc(100% - 24px), 520px);
+  }
+
+  .site-header .nav {
+    min-height: 70px;
+  }
+
+  .hero {
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    margin-bottom: 16px;
+    font-size: 0.72rem;
+    text-align: left;
+  }
+
+  .intro-line {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-name {
+    width: min(100%, 430px);
+    padding: 10px 9px 13px;
+    font-size: clamp(3rem, 16vw, 4.1rem);
+  }
+
+  .name-code {
+    font-size: 0.56rem;
+  }
+
+  .hero-role {
+    font-size: 0.96rem;
+  }
+
+  .terminal-line {
+    width: 100%;
+    max-width: 430px;
+    margin-inline: auto;
+  }
+
+  .hero-text {
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .social-row {
+    gap: 10px 14px;
+  }
+
+  .social-row a {
+    font-size: 0.82rem;
+  }
+
+  .portrait-shell {
+    width: min(340px, 92vw);
+  }
+
+  .portrait-frame {
+    border-radius: 24px;
+  }
+
+  .floating-card {
+    display: none;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 390px) {
+  .hero-name {
+    font-size: clamp(2.7rem, 15vw, 3.65rem);
+  }
+
+  .hero-role {
+    font-size: 0.9rem;
+  }
+
+  .portrait-shell {
+    width: min(310px, 92vw);
+  }
+}
